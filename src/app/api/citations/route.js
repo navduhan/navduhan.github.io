@@ -1,3 +1,7 @@
+// api/scholar/route.js
+export const dynamic = 'force-static'; // Or 'auto' if appropriate
+export const revalidate = 60; // Optional: if you want it to revalidate every 60 seconds
+
 import axios from "axios";
 import * as cheerio from "cheerio";
 import fs from "fs"; // Import fs module
@@ -63,8 +67,8 @@ export async function GET(req) {
           const citationCount = citations[index];
           if (year && citationCount && !isNaN(citationCount)) {
             // Log each year and citation count to the file
-            const logContent = `Year: ${year} | Citation Count: ${citationCount}\n`;
-            fs.writeFileSync('yearWiseCitations.txt', logContent, { flag: 'a' }); // Append to the file
+            // const logContent = `Year: ${year} | Citation Count: ${citationCount}\n`;
+            // fs.writeFileSync('yearWiseCitations.txt', logContent, { flag: 'a' }); // Append to the file
     
             // Store in the final object
             yearWiseCitations[year] = parseInt(citationCount, 10);

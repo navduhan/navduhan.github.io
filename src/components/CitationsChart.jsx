@@ -10,7 +10,7 @@ const CitationsChart = () => {
   useEffect(() => {
     const fetchCitationsData = async () => {
       try {
-        const response = await fetch("/api/scholar/citations");
+        const response = await fetch("/api/citations");
         const jsonData = await response.json();
 
         console.log(jsonData);

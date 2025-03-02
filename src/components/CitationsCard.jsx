@@ -6,7 +6,7 @@ const CitationCard = () => {
   useEffect(() => {
     // Fetch citation data (Replace with actual API endpoint or mock data for testing)
     const fetchCitationData = async () => {
-      const response = await fetch('/api/scholar/citations'); // Replace with the correct endpoint
+      const response = await fetch('/api/citations'); // Replace with the correct endpoint
       const data = await response.json();
       setCitationData(data);
     };

@@ -1,3 +1,7 @@
+
+// api/scholar/route.js
+export const dynamic = 'force-static'; // Or 'auto' if appropriate
+export const revalidate = 60; // Optional: if you want it to revalidate every 60 seconds
 import axios from "axios";
 import * as cheerio from "cheerio";
 
