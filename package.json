@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next export",
-    "deploy": "gh-pages -d out",
+    "build": "next build",
+    "deploy": "gh-pages -d out --nojekyll ",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^4.1.2",
     "@tailwindcss/postcss": "^4.0.0",
+    "autoprefixer": "^10.4.20",
     "axios": "^1.8.1",
     "bibtex-parse-js": "^0.0.23",
     "bibtex-parser-js": "^0.0.2",
