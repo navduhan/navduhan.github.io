@@ -1,47 +1,32 @@
-// src/components/NavBar.jsx
 "use client"
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { 
-  IoMdMenu, 
-  IoMdClose, 
-
-  IoMdHome,
-  IoMdPerson,
-  IoMdSchool,
-  IoMdBuild,
-  IoMdMail,
-  IoLogoGithub,
-  IoLogoLinkedin,
-  IoLogoInstagram
-} from "react-icons/io";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { IoChevronDown } from "react-icons/io5";
-import { 
-  FaFlask, 
-  FaChalkboardTeacher, 
-  FaBook, 
-  FaLaptopCode, 
-  FaServer,
-  FaGoogle,
-  FaResearchgate
-} from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 import Logo from "./Logo";
+import {
+  GithubIcon,
+  GoogleScholarIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  ResearchGateIcon,
+} from "./Icons";
+
 import { motion } from "framer-motion";
 
-const CustomLink = ({ href, title, className = "", onClick, icon }) => {
+const CustomLink = ({ href, title, className = "", onClick }) => {
   const pathname = usePathname();
   return (
     <Link
       href={href}
-      className={`${className} relative group font-semibold text-black dark:text-white text-lg flex items-center`}
+      className={`${className} relative group font-semibold text-black dark:text-white text-lg`}
       onClick={onClick}
     >
-      {icon && <span className="mr-2 text-blue-600 dark:text-blue-400">{icon}</span>}
       {title}
       <span
-        className={`h-[2px] inline-block absolute left-0 -bottom-0.5 bg-gradient-to-r from-blue-600 to-purple-600
+        className={`h-[2px] inline-block absolute left-0 -bottom-0.5 bg-gray-900 dark:bg-gray-100
           group-hover:w-full transition-[width] ease duration-300
           ${pathname === href ? "w-full" : "w-0"} `}
       >
@@ -51,23 +36,22 @@ const CustomLink = ({ href, title, className = "", onClick, icon }) => {
   );
 };
 
-const DropdownLink = ({ href, title, onClick, icon }) => {
+const DropdownLink = ({ href, title, onClick }) => {
   const pathname = usePathname();
   return (
     <Link
       href={href}
-      className={`flex items-center px-4 py-2 text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md ${
+      className={`block px-4 py-2 text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md ${
         pathname === href ? "bg-gray-100 dark:bg-gray-700" : ""
       }`}
       onClick={onClick}
     >
-      {icon && <span className="mr-2 text-blue-600 dark:text-blue-400">{icon}</span>}
       {title}
     </Link>
   );
 };
 
-const Dropdown = ({ title, children, icon }) => {
+const Dropdown = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const timeoutRef = useRef(null);
@@ -112,7 +96,6 @@ const Dropdown = ({ title, children, icon }) => {
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        {icon && <span className="mr-2 text-blue-600 dark:text-blue-400">{icon}</span>}
         <span>{title}</span>
         <IoChevronDown
           className={`w-4 h-4 transition-transform ${
@@ -134,18 +117,17 @@ const Dropdown = ({ title, children, icon }) => {
 };
 
 // Mobile dropdown menu component
-const MobileDropdown = ({ title, children, icon }) => {
+const MobileDropdown = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-center space-x-1 w-full py-2 text-lg"
+        className="flex items-center justify-center space-x-1 w-full py-2  text-lg"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        {icon && <span className="mr-2 text-blue-600 dark:text-blue-400">{icon}</span>}
         <span>{title}</span>
         <IoChevronDown
           className={`w-4 h-4 transition-transform ${
@@ -179,23 +161,23 @@ export default function NavBar() {
 
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex items-center space-x-6">
-        <CustomLink href="/" title="Home" icon={<IoMdHome />} />
-        <CustomLink href="/about" title="About" icon={<IoMdPerson />} />
+        <CustomLink href="/" title="Home" />
+        <CustomLink href="/about" title="About" />
         
         {/* Academic Dropdown */}
-        <Dropdown title="Academic" icon={<IoMdSchool />}>
-          <DropdownLink href="/research" title="Research" icon={<FaFlask />} />
-          <DropdownLink href="/teaching" title="Teaching" icon={<FaChalkboardTeacher />} />
-          <DropdownLink href="/publications" title="Publications" icon={<FaBook />} />
+        <Dropdown title="Academic">
+          <DropdownLink href="/research" title="Research" />
+          <DropdownLink href="/teaching" title="Teaching" />
+          <DropdownLink href="/publications" title="Publications" />
         </Dropdown>
         
         {/* Tools Dropdown */}
-        <Dropdown title="Tools" icon={<IoMdBuild />}>
-          <DropdownLink href="/tools/softwares" title="Softwares" icon={<FaLaptopCode />} />
-          <DropdownLink href="/tools/webservers" title="Web Servers" icon={<FaServer />} />
+        <Dropdown title="Tools">
+          <DropdownLink href="/tools/softwares" title="Softwares" />
+          <DropdownLink href="/tools/webservers" title="Web Servers" />
         </Dropdown>
         
-        <CustomLink href="/contact" title="Contact" icon={<IoMdMail />} />
+        <CustomLink href="/contact" title="Contact" />
       </nav>
 
       {/* Social Icons and Theme Toggle on the right (Desktop Only) */}
@@ -203,52 +185,52 @@ export default function NavBar() {
         <motion.a
           href="https://github.com/navduhan"
           target={"_blank"}
-          className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+          className="w-6"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="GitHub"
         >
-          <IoLogoGithub />
+          <GithubIcon />
         </motion.a>
         <motion.a
           href="https://linkedin.com/in/navduhan"
           target={"_blank"}
-          className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+          className="w-6"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="LinkedIn"
         >
-          <IoLogoLinkedin />
+          <LinkedInIcon />
         </motion.a>
         <motion.a
           href="https://scholar.google.com/citations?user=kvf8JJQAAAAJ&hl=en"
           target={"_blank"}
-          className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+          className="w-6"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Google Scholar"
         >
-          <FaGoogle />
+          <GoogleScholarIcon />
         </motion.a>
         <motion.a
           href="https://www.researchgate.net/profile/Naveen-Duhan?ev=hdr_xprf"
           target={"_blank"}
-          className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+          className="w-6"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="ResearchGate"
         >
-          <FaResearchgate />
+          <ResearchGateIcon />
         </motion.a>
         <motion.a
           href="https://instagram.com/freaky_nav"
           target={"_blank"}
-          className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+          className="w-6"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Instagram"
         >
-          <IoLogoInstagram />
+          <InstagramIcon />
         </motion.a>
 
         {/* Theme Toggle */}
@@ -272,23 +254,23 @@ export default function NavBar() {
         }`}
       >
         <div className="flex flex-col items-center space-y-6 w-64">
-          <CustomLink href="/" title="Home" onClick={handleClick} className="text-black dark:text-white" icon={<IoMdHome />} />
-          <CustomLink href="/about" title="About" onClick={handleClick} className="text-black dark:text-white" icon={<IoMdPerson />} />
+          <CustomLink href="/" title="Home" onClick={handleClick} className="text-black dark:text-white" />
+          <CustomLink href="/about" title="About" onClick={handleClick} className="text-black dark:text-white" />
           
           {/* Mobile Academic Dropdown */}
-          <MobileDropdown title="Academic" icon={<IoMdSchool />}>
-            <DropdownLink href="/research" title="Research" onClick={handleClick} icon={<FaFlask />} />
-            <DropdownLink href="/teaching" title="Teaching" onClick={handleClick} icon={<FaChalkboardTeacher />} />
-            <DropdownLink href="/publications" title="Publications" onClick={handleClick} icon={<FaBook />} />
+          <MobileDropdown title="Academic">
+            <DropdownLink href="/research" title="Research" onClick={handleClick} />
+            <DropdownLink href="/teaching" title="Teaching" onClick={handleClick} />
+            <DropdownLink href="/publications" title="Publications" onClick={handleClick} />
           </MobileDropdown>
           
           {/* Mobile Tools Dropdown */}
-          <MobileDropdown title="Tools" icon={<IoMdBuild />}>
-            <DropdownLink href="/tools/softwares" title="Softwares" onClick={handleClick} icon={<FaLaptopCode />} />
-            <DropdownLink href="/tools/webservers" title="Web Servers" onClick={handleClick} icon={<FaServer />} />
+          <MobileDropdown title="Tools">
+            <DropdownLink href="/tools/softwares" title="Softwares" onClick={handleClick} />
+            <DropdownLink href="/tools/webservers" title="Web Servers" onClick={handleClick} />
           </MobileDropdown>
           
-          <CustomLink href="/contact" title="Contact" onClick={handleClick} className="text-black dark:text-white" icon={<IoMdMail />} />
+          <CustomLink href="/contact" title="Contact" onClick={handleClick} className="text-black dark:text-white" />
         </div>
         
         {/* Social Icons in Mobile Menu */}
@@ -296,47 +278,29 @@ export default function NavBar() {
           <motion.a
             href="https://github.com/navduhan"
             target={"_blank"}
-            className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+            className="w-6"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <IoLogoGithub />
+            <GithubIcon />
           </motion.a>
           <motion.a
             href="https://linkedin.com/in/navduhan"
             target={"_blank"}
-            className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+            className="w-6"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <IoLogoLinkedin />
+            <LinkedInIcon />
           </motion.a>
           <motion.a
             href="https://scholar.google.com/citations?user=kvf8JJQAAAAJ&hl=en"
             target={"_blank"}
-            className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+            className="w-6"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <FaGoogle />
-          </motion.a>
-          <motion.a
-            href="https://www.researchgate.net/profile/Naveen-Duhan?ev=hdr_xprf"
-            target={"_blank"}
-            className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FaResearchgate />
-          </motion.a>
-          <motion.a
-            href="https://instagram.com/freaky_nav"
-            target={"_blank"}
-            className="text-xl text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <IoLogoInstagram />
+            <GoogleScholarIcon />
           </motion.a>
         </div>
 
