@@ -1,30 +1,45 @@
 // src/components/research/PublicationsPreview.jsx
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaBook, FaArrowRight, FaQuoteLeft } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { FaBook, FaQuoteLeft, FaArrowRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 const PublicationsPreview = () => {
-  // Sample recent publications to show as preview
-  const recentPublications = [
-    {
-      title: "deepNEC: a novel framework for accurate identification and classification of nitrogen metabolism enzymes using deep learning",
-      journal: "Briefings in Bioinformatics",
-      year: "2023"
-    },
-    {
-      title: "Genome-wide identification and expression analysis of SWEET genes in wheat (Triticum aestivum L.) and their role in host-pathogen interaction",
-      journal: "Plant Physiology and Biochemistry",
-      year: "2022"
-    },
-    {
-      title: "deepHPI: a deep learning framework for host-pathogen protein-protein interaction prediction using sequence information",
-      journal: "Molecular Omics",
-      year: "2022"
-    }
-  ];
+  const [publications, setPublications] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPublications = async () => {
+      try {
+        const response = await fetch('/api/publications');
+        if (!response.ok) throw new Error('Failed to fetch publications');
+        const data = await response.json();
+        
+        // Sort by year and get the latest 3 publications
+        const latestPubs = data
+          .sort((a, b) => b.year - a.year)
+          .slice(0, 3);
+        
+        setPublications(latestPubs);
+      } catch (error) {
+        console.error('Error fetching publications:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPublications();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-[200px]">
+        <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-emerald-500"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full">
@@ -75,16 +90,16 @@ const PublicationsPreview = () => {
             </h3>
             
             <div className="space-y-6">
-              {recentPublications.map((pub, index) => (
+              {publications.map((pub, index) => (
                 <div 
-                  key={index}
+                  key={pub.id}
                   className="border-l-4 border-emerald-500 pl-4 py-1"
                 >
                   <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-1 line-clamp-2">
                     {pub.title}
                   </h4>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {pub.journal}, {pub.year}
+                    {pub.venue}, {pub.year}
                   </p>
                 </div>
               ))}

@@ -68,9 +68,9 @@ const Footer = () => {
                 <li className="flex items-start">
                   <FaMapMarkerAlt className="text-blue-600 dark:text-blue-400 mt-1 mr-3" />
                   <span className="text-base text-gray-600 dark:text-gray-300">
-                    Department of Plants, Soils and Climate<br />
-                    Utah State University<br />
-                    Logan, UT 84322
+                    Animal Disease Research and Diagnostic Laboratory<br />
+                    South Dakota State University<br />
+                    Brookings, SD 57007
                   </span>
                 </li>
                 <li className="flex items-center">

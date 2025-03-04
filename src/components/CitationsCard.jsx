@@ -27,6 +27,7 @@ const CitationCard = () => {
     );
   }
 
+  
   return (
     <div className=" p-4 border border-sky-300 shadow-md rounded-lg bg-white">
       {/* <h3 className="text-lg font-semibold text-gray-800">Citation Metrics</h3> */}

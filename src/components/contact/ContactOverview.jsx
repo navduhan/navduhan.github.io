@@ -34,13 +34,13 @@ const ContactOverview = () => {
           <ContactInfoItem 
             icon={<FiMapPin />} 
             title="Location" 
-            content="Utah State University, Logan, UT" 
+            content="South Dakota State University, Brookings, SD" 
             gradient="from-blue-600 to-cyan-500"
           />
           <ContactInfoItem 
             icon={<FiMail />} 
             title="Email" 
-            content="duhan27dec@gmail.com" 
+            content="naveen.duhan@outlook.com" 
             gradient="from-purple-600 to-pink-500"
           />
           <ContactInfoItem 

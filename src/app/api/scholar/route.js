@@ -5,6 +5,7 @@ export const revalidate = 60; // Optional: if you want it to revalidate every 60
 import axios from "axios";
 import * as cheerio from "cheerio";
 
+
 export async function GET(req) {
   try {
     const userId = "kvf8JJQAAAAJ&hl"; // Replace with the Google Scholar user ID
@@ -14,7 +15,7 @@ export async function GET(req) {
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
       },
-    });
+    })
 
     const $ = cheerio.load(response.data);
     let articles = [];

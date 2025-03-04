@@ -145,7 +145,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.8 }}
               className="text-gray-600 dark:text-gray-300 mb-8 max-w-3xl"
             >
-              With over 8 years of experience in bioinformatics and computational biology, I've developed expertise across multiple domains. My technical skills span from programming languages and data science to specialized bioinformatics tools and cloud computing.
+              With over 15 years of experience in bioinformatics and computational biology, I've developed expertise across multiple domains. My technical skills span from programming languages and data science to specialized bioinformatics tools and cloud computing.
             </motion.p>
             
             <Skills />

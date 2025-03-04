@@ -86,41 +86,41 @@ const ResearchProjects = () => {
   const projects = [
     {
       title: "deepNEC",
-      category: "Deep Learning",
-      description: "A deep learning framework for predicting nitrogen metabolism enzymes from protein sequences, achieving over 95% accuracy in enzyme classification.",
-      technologies: ["Python", "TensorFlow", "Keras", "Bioinformatics"],
+      category: "Deep Learning in Genomics",
+      description: "A deep learning framework for predicting nitrogen metabolism enzymes from protein sequences. The model achieves state-of-the-art performance in enzyme classification and provides interpretable insights into protein structure-function relationships.",
+      technologies: ["Python", "TensorFlow", "Keras", "Bioinformatics", "Deep Learning"],
       year: "2022",
-      image: "/images/research/project1.jpg",
+      image: "/images/research/deepnec.png",
       github: "https://github.com/navduhan/deepnec",
       link: "http://bioinfo.usu.edu/deepNEC/"
     },
     {
       title: "pySeqRNA",
-      category: "RNA-Seq Analysis",
-      description: "A comprehensive Python package for RNA-Seq data analysis, including quality control, alignment, quantification, and differential expression analysis.",
-      technologies: ["Python", "RNA-Seq", "NGS", "Bioconductor"],
+      category: "RNA-Seq Analysis Pipeline",
+      description: "A comprehensive Python package for RNA-Seq data analysis, featuring automated workflows for quality control, alignment, quantification, and differential expression analysis. Includes interactive visualizations and detailed reporting.",
+      technologies: ["Python", "RNA-Seq", "NGS", "Bioconductor", "Data Visualization"],
       year: "2021",
-      image: "/images/research/project2.jpg",
+      image: "/images/research/pyseqrna.png",
       github: "https://github.com/navduhan/pyseqrna",
       link: "http://bioinfo.usu.edu/pyseqrna/"
     },
     {
       title: "HuCoPIA",
       category: "Host-Pathogen Interactions",
-      description: "An atlas of human-coronavirus protein interactions, providing insights into viral infection mechanisms and potential therapeutic targets.",
-      technologies: ["Proteomics", "Network Analysis", "Database"],
+      description: "An interactive atlas of human-coronavirus protein interactions, providing comprehensive insights into viral infection mechanisms. Features include network visualization, pathway analysis, and potential therapeutic target identification.",
+      technologies: ["Proteomics", "Network Analysis", "Database", "Visualization"],
       year: "2020",
-      image: "/images/research/project3.jpg",
+      image: "/images/research/hucopia.png",
       github: null,
       link: "http://bioinfo.usu.edu/hucopia/"
     },
     {
       title: "miPyRNA",
       category: "Small RNA Analysis",
-      description: "A Python package for small RNA sequencing data analysis, focusing on microRNA identification, quantification, and target prediction.",
-      technologies: ["Python", "Small RNA-Seq", "miRNA", "NGS"],
+      description: "A Python package for small RNA sequencing data analysis, focusing on microRNA identification, quantification, and target prediction. Includes novel algorithms for miRNA discovery and comprehensive statistical analysis.",
+      technologies: ["Python", "Small RNA-Seq", "miRNA", "NGS", "Statistics"],
       year: "2023",
-      image: "/images/research/project4.jpg",
+      image: "/images/research/mipyrna.png",
       github: "https://github.com/navduhan/mipyrna",
       link: null
     }

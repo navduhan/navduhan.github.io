@@ -22,17 +22,17 @@ const ContactInfo = () => {
           icon={<FiMapPin />} 
           title="Office Address"
           details={[
-            "Department of Plants, Soils and Climate",
-            "Utah State University",
-            "4820 Old Main Hill",
-            "Logan, UT 84322-4820"
+            "Animal Disease Research and Diagnostic Laboratory",
+            "South Dakota State University",
+            "1155 North Campus Drive",
+            "Brookings, SD 57007"
           ]}
         />
         
         <ContactDetail 
           icon={<FiMail />} 
           title="Email"
-          details={["duhan27dec@gmail.com", "naveen.duhan@usu.edu"]}
+          details={["naveen.duhan@outlook.com"]}
         />
         
         <ContactDetail 
