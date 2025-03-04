@@ -1,4 +1,4 @@
-// api/scholar/route.js
+// api/citations/route.js
 export const dynamic = 'force-static'; // Or 'auto' if appropriate
 export const revalidate = 60; // Optional: if you want it to revalidate every 60 seconds
 
@@ -8,7 +8,11 @@ import fs from "fs"; // Import fs module
 
 export async function GET(req) {
   try {
-    const userId = 'kvf8JJQAAAAJ&hl'; // Replace with the Google Scholar user ID
+    const userId = process.env.NEXT_PUBLIC_GOOGLE_SCHOLAR_ID;
+    if (!userId) {
+      throw new Error("Google Scholar ID not configured");
+    }
+
     const url = `https://scholar.google.com/citations?user=${userId}&hl=en`;
 
     // Make a request to fetch the HTML of the user's profile

@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Academic Portfolio Website
+
+A modern, responsive academic portfolio website built with Next.js 15, showcasing research, publications, teaching, and professional experience.
+
+## Features
+
+- 🎨 Modern and responsive design
+- 🌙 Dark mode support
+- 📱 Mobile-first approach
+- ⚡ Fast page loads with Next.js
+- 🔍 Advanced search and filtering for publications
+- 📊 Google Scholar integration
+- 📝 Dynamic content management
+- 🎭 Smooth animations with Framer Motion
+- 🎯 SEO optimized
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Deployment:** Vercel
+- **Content Management:** JSON/BIB files
+- **API Integration:** Google Scholar API
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── about/             # About page and components
+│   ├── api/               # API routes
+│   ├── contact/           # Contact page
+│   ├── publications/      # Publications page
+│   ├── research/          # Research page
+│   ├── teaching/          # Teaching page
+│   └── tools/             # Tools and utilities
+├── components/            # Reusable React components
+├── styles/               # Global styles
+└── utils/                # Utility functions
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add:
+   ```
+   NEXT_PUBLIC_GOOGLE_SCHOLAR_ID=your_scholar_id
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Learn More
+## Content Management
 
-To learn more about Next.js, take a look at the following resources:
+### Publications
+- Research publications are managed through `mypub.bib`
+- Google Scholar publications are fetched via API
+- Supports DOI links, PDF downloads, and citations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Research Areas
+- Edit `src/components/ResearchAreas.jsx` to update research focus areas
+- Add images to the `public/images/research` directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Teaching
+- Update teaching information in `src/components/TeachingSection.jsx`
+- Add course materials to the `public/teaching` directory
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site is optimized for deployment on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Configure environment variables
+4. Deploy!
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please reach out through the contact form on the website or open an issue in the repository.
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS

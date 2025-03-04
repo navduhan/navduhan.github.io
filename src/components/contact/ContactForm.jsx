@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
+import { analyticsEvents } from '@/utils/analytics';
 
 // Validation Schema
 const schema = yup.object().shape({
@@ -30,23 +31,39 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
+      // Check if all required environment variables are present
+      const requiredEnvVars = [
+        'NEXT_PUBLIC_EMAILJS_SERVICE_ID',
+        'NEXT_PUBLIC_EMAILJS_TEMPLATE_ID',
+        'NEXT_PUBLIC_EMAILJS_PUBLIC_KEY',
+        'NEXT_PUBLIC_EMAILJS_RECIPIENT_EMAIL'
+      ];
+
+      const missingVars = requiredEnvVars.filter(varName => !process.env[varName]);
+      if (missingVars.length > 0) {
+        throw new Error(`Missing required environment variables: ${missingVars.join(', ')}`);
+      }
+
       await emailjs.send(
-        "service_91cyez9",
-        "template_r9beced",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           byname: data.fullName,
           from_name: data.email,
-          to_name: "duhan27dec@gmail.com",
+          to_name: process.env.NEXT_PUBLIC_EMAILJS_RECIPIENT_EMAIL,
           subject: data.subject,
           message_html: data.message,
         },
-        "user_MLs1uJw23WgWZm9dgXE8c"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
+
       setIsSuccess(true);
       reset();
+      analyticsEvents.sendMessage(); // Track successful message send
       setTimeout(() => setIsSuccess(false), 5000);
     } catch (error) {
       console.error("Email send error:", error);
+      // You might want to show an error message to the user here
     } finally {
       setIsSubmitting(false);
     }
