@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Research Associate III",
+    "company": "South Dakota State University",
+    "companyLink": "https://www.sdstate.edu",
+    "time": "Nov 2023 - Present",
+    "address": "Brookings, SD, USA",
+    "description": "Conducting AI-driven research to enhance computational models for bioinformatics and genomic data analysis. Developing deep learning frameworks for pattern recognition in biological sequences, optimizing machine learning algorithms for high-throughput sequencing data, and integrating multi-omics data to derive novel biological insights. Collaborating with interdisciplinary teams to publish findings and contribute to grant proposals."
+  },
+  {
+    "title": "Graduate Research Assistant",
+    "company": "Utah State University",
+    "companyLink": "https://www.usu.edu",
+    "time": "Jan 2019 - Nov 2023",
+    "address": "Logan, UT, USA",
+    "description": "Led research projects focusing on deep learning and AI applications for large-scale biological data processing. Designed and implemented neural network architectures to analyze genomic and transcriptomic data, enhancing predictive models. Developed bioinformatics pipelines using Python and R for NGS analysis. Published peer-reviewed research and presented findings at international conferences."
+  },
+  {
+    "title": "Bioinformatician",
+    "company": "Punjab Agricultural University",
+    "companyLink": "https://www.pau.edu",
+    "time": "Aug 2011 - Dec 2018",
+    "address": "Ludhiana, Punjab, India",
+    "description": "Designed and optimized computational workflows for genome analysis in agricultural research. Developed custom Python and Bash scripts for preprocessing, variant calling, and transcriptomic analysis. Conducted differential gene expression analysis to identify key regulatory genes in crop improvement studies. Provided bioinformatics training to researchers and assisted in publishing results."
+  },
+  {
+    "title": "Lecturer, Bioinformatics",
+    "company": "Guru Nanak Girls College",
+    "companyLink": "https://www.gngc.ac.in",
+    "time": "Jul 2010 - Aug 2011",
+    "address": "Ludhiana, Punjab, India",
+    "description": "Taught undergraduate courses in bioinformatics, computational biology, and biostatistics, covering sequence alignment, molecular modeling, and systems biology. Developed course materials and guided student research projects on bioinformatics applications in drug discovery."
+  }
+]

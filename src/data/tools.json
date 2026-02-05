@@ -1,0 +1,160 @@
+{
+  "software": [
+    {
+      "name": "miPyRNA",
+      "description": "An automated Python package for small RNA sequencing data analysis.",
+      "link": "https://github.com/navduhan/mipyrna",
+      "category": "RNA Analysis",
+      "features": ["Small RNA Analysis", "Automated Pipeline", "Statistical Analysis"],
+      "type": "github"
+    },
+    {
+      "name": "SNVguru",
+      "description": "An automated Python package for single nucleotide variation (SNV) analysis.",
+      "link": "https://github.com/usubioinfo/snvguru",
+      "category": "Variant Analysis",
+      "features": ["SNV Detection", "Variant Calling", "Annotation"],
+      "type": "github"
+    },
+    {
+      "name": "pySeqRNA",
+      "description": "An automated Python package for next-generation sequencing data analysis.",
+      "link": "https://github.com/navduhan/pyseqrna",
+      "category": "NGS Analysis",
+      "features": ["NGS Pipeline", "Quality Control", "Differential Expression"],
+      "type": "github"
+    },
+    {
+      "name": "MetaNextViro",
+      "description": "GitHub repository for MetaNextViro.",
+      "link": "https://github.com/navduhan/metanextviro",
+      "category": "Metagenomics",
+      "features": ["Viral Analysis", "Workflow", "Research Tooling"],
+      "type": "github"
+    },
+    {
+      "name": "TagSeq",
+      "description": "GitHub repository for TagSeq.",
+      "link": "https://github.com/navduhan/tagseq",
+      "category": "Transcriptomics",
+      "features": ["Tag-based RNA", "Analysis Pipeline", "Research Tooling"],
+      "type": "github"
+    },
+    {
+      "name": "MINpred",
+      "description": "A standalone alignment-free deep learning based tool for nitrogen mineralization enzyme classification.",
+      "link": "https://bioinfo.usu.edu/minpred/download/minpred.tar.gz",
+      "category": "Deep Learning",
+      "features": ["Enzyme Classification", "Deep Learning Model", "Alignment-free"],
+      "type": "download"
+    },
+    {
+      "name": "deepNEC",
+      "description": "A standalone alignment-free deep learning based tool for nitrogen metabolism enzyme classification.",
+      "link": "https://navduhan@bitbucket.org/navduhan/deepnec.git",
+      "category": "Deep Learning",
+      "features": ["Metabolism Analysis", "Deep Learning Model", "Alignment-free"],
+      "type": "bitbucket"
+    }
+  ],
+  "webResources": [
+    {
+      "name": "HPInet",
+      "description": "A cereal crops and pathogen protein-protein interaction database.",
+      "link": "http://bioinfo.usu.edu/hpinet/",
+      "type": "database",
+      "tags": ["host-pathogen", "protein-interaction", "cereal-crops"]
+    },
+    {
+      "name": "HuPoxNET",
+      "description": "A database for human-monkeypox virus interactome.",
+      "link": "http://bioinfo.usu.edu/hupoxnet/",
+      "type": "database",
+      "tags": ["host-pathogen", "virus", "interactome"]
+    },
+    {
+      "name": "myDockDB",
+      "description": "A multiple myeloma proteins and natural compounds docking web resource.",
+      "link": "http://bioinfo.usu.edu/myDockDB/",
+      "type": "database",
+      "tags": ["docking", "multiple-myeloma", "natural-compounds"]
+    },
+    {
+      "name": "pySeqRNA",
+      "description": "Complete documentation website for pySeqRNA package.",
+      "link": "http://bioinfo.usu.edu/pyseqrna/",
+      "type": "webserver",
+      "tags": ["RNA-seq", "documentation", "genomics"]
+    },
+    {
+      "name": "ranchSATdb",
+      "description": "A database of ranch animals microsatellite markers.",
+      "link": "http://bioinfo.usu.edu/ranchSATdb/",
+      "type": "database",
+      "tags": ["microsatellite", "ranch-animals", "genomics"]
+    },
+    {
+      "name": "TritiKBdb",
+      "description": "A host-pathogen interaction database for understanding Karnal Bunt disease infection mechanisms in wheat.",
+      "link": "http://bioinfo.usu.edu/tritikbdb/",
+      "type": "database",
+      "tags": ["host-pathogen", "wheat", "disease"]
+    },
+    {
+      "name": "HuCoPIA",
+      "description": "An atlas of human vs. SARS-CoV-2 interactome and comparative analysis with other Coronaviridae family viruses.",
+      "link": "http://bioinfo.usu.edu/hucopia/",
+      "type": "database",
+      "tags": ["host-pathogen", "COVID-19", "interactome"]
+    },
+    {
+      "name": "deepNEC",
+      "description": "An integrated web server platform for the prediction of nitrogen metabolism-related enzymes using deep learning.",
+      "link": "http://bioinfo.usu.edu/deepNEC/",
+      "type": "webserver",
+      "tags": ["deep-learning", "enzymes", "metabolism"]
+    },
+    {
+      "name": "deepHPI",
+      "description": "A deep learning framework for the prediction of host-pathogen protein interactions and visualization.",
+      "link": "http://bioinfo.usu.edu/deepHPI/",
+      "type": "webserver",
+      "tags": ["deep-learning", "host-pathogen", "protein-interaction"]
+    },
+    {
+      "name": "GreeningDB",
+      "description": "A database of host-pathogen interactions and comparative omics of citrus and citrus greening disease (HLB).",
+      "link": "http://bioinfo.usu.edu/GreeningDB/",
+      "type": "database",
+      "tags": ["host-pathogen", "citrus", "disease"]
+    },
+    {
+      "name": "covidTracker",
+      "description": "A COVID-19 disease infection statistics tracker.",
+      "link": "http://bioinfo.usu.edu/covidTracker/",
+      "type": "webserver",
+      "tags": ["COVID-19", "disease-tracking", "statistics"]
+    },
+    {
+      "name": "legumeSSRdb",
+      "description": "A legume species microsatellite markers database.",
+      "link": "http://bioinfo.usu.edu/legumeSSRdb/",
+      "type": "database",
+      "tags": ["microsatellite", "legume", "genomics"]
+    },
+    {
+      "name": "citSATdb",
+      "description": "A citrus species microsatellite markers database.",
+      "link": "http://bioinfo.usu.edu/citSATdb/",
+      "type": "database",
+      "tags": ["microsatellite", "citrus", "genomics"]
+    },
+    {
+      "name": "PRGminer",
+      "description": "Deep learning based PR-genes prediction.",
+      "link": "http://bioinfo.usu.edu/prgminer/",
+      "type": "webserver",
+      "tags": ["plant resistance gene", "R-gene", "genomics"]
+    }
+  ]
+}

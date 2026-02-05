@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Ph.D. in Plant Sciences (Bioinformatics and Computational Biology)",
+    "university": "Utah State University",
+    "universityUrl": "https://www.usu.edu",
+    "period": "2019 - 2023",
+    "location": "Logan, UT",
+    "description": "Thesis: Machine learning and data mining in complex genomics big data: developing efficient tools to advance computational systems biology."
+  },
+  {
+    "title": "Master of Science in Bioinformatics",
+    "university": "Punjabi University Patiala",
+    "universityUrl": "http://www.punjabiuniversity.ac.in",
+    "period": "2008 - 2010",
+    "location": "Patiala, India",
+    "description": "Thesis: In silico prediction of microRNA in Catharanthus roseus and their role in metabolomics."
+  },
+  {
+    "title": "Bachelor of Science in Biology",
+    "university": "Kurukshetra University Kurukshetra",
+    "universityUrl": "https://www.kuk.ac.in",
+    "period": "2005 - 2008",
+    "location": "Kurukshetra, India",
+    "description": "Subjects: Zoology, Botany, Chemistry."
+  },
+  {
+    "title": "Add-on Certificate Diploma in Bioinformatics",
+    "university": "Kurukshetra University Kurukshetra",
+    "universityUrl": "https://www.kuk.ac.in",
+    "period": "2007 - 2008",
+    "location": "Kurukshetra, India",
+    "description": "Specialized in Bioinformatics."
+  }
+]

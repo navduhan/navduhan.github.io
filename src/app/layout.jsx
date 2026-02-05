@@ -1,37 +1,37 @@
 import "@/styles/globals.css";
+import { Fraunces, Alegreya_Sans } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
-import { ThemeProvider } from "next-themes";
-import Head from "next/head";
 
-import { Montserrat } from "next/font/google";
-
-// Load the Montserrat font with the variable font
-const montserrat = Montserrat({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-mont", // This creates a CSS custom property for the font
+  variable: "--font-display"
 });
+
+const alegreya = Alegreya_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-body"
+});
+
+export const metadata = {
+  title: {
+    default: "Naveen Duhan",
+    template: "%s | Naveen Duhan"
+  },
+  description: "Bioinformatician and computational biologist focused on AI-driven discovery and multi-omics systems biology.",
+  metadataBase: new URL("https://navduhan.github.io")
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider>
-          <Head>
-            <title>Naveen Duhan</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-          {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && <GoogleAnalytics />}
-          <main
-            className={`${montserrat.variable} font-sans w-full min-h-screen`} // Apply the variable font here
-          >
-            <NavBar />
-            {children}
-            <Footer />
-          </main>
-        </ThemeProvider>
+    <html lang="en" data-theme="blue">
+      <body className={`${fraunces.variable} ${alegreya.variable} text-ink`}>
+        <div className="min-h-screen flex flex-col">
+          <NavBar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

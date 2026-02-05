@@ -1,0 +1,39 @@
+{
+  "name": "Naveen Duhan",
+  "role": "Bioinformatician and Computational Biologist",
+  "tagline": "Building AI-driven bioinformatics systems that translate complex biological data into clear, actionable insight.",
+  "location": "Brookings, SD, USA",
+  "email": "naveen.duhan@outlook.com",
+  "phone": "+1 (435) 797-0000",
+  "website": "navduhan.github.io",
+  "github": "https://github.com/navduhan",
+  "cvPath": "/Naveen_Duhan_CV_Professional.pdf",
+  "portrait": "/images/profile/nav1.jpg",
+  "summary": [
+    "I am a bioinformatician focused on computational genomics, host-pathogen interactions, and machine learning for biological discovery. My work blends data science with systems biology to create tools that are practical for researchers and rigorous enough for publication.",
+    "Across academia and applied research, I have led projects that span NGS analysis, multi-omics integration, and the development of web resources that make complex data accessible. I enjoy collaborating with interdisciplinary teams to move from data to decisions."
+  ],
+  "highlights": [
+    "Deep learning for genomics and protein interaction prediction",
+    "Multi-omics integration and systems biology",
+    "Bioinformatics pipelines, databases, and web servers",
+    "Host-pathogen interaction modeling"
+  ],
+  "metrics": [
+    { "label": "Publications", "value": "30+" },
+    { "label": "Research Projects", "value": "25+" },
+    { "label": "Collaborations", "value": "15+" },
+    { "label": "Citations", "value": "350+" }
+  ],
+  "office": [
+    "Animal Disease Research and Diagnostic Laboratory",
+    "South Dakota State University",
+    "1155 North Campus Drive",
+    "Brookings, SD 57007"
+  ],
+  "awardSpotlight": {
+    "title": "Doctoral Researcher of the Year 2022-23",
+    "description": "Recognized for outstanding contributions to bioinformatics research and innovative computational approaches to solving complex biological problems.",
+    "videoId": "VeWw6Rh6coA"
+  }
+}

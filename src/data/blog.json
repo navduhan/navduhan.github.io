@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "reproducible-bioinformatics-pipelines",
+    "title": "Designing Reproducible Bioinformatics Pipelines",
+    "date": "2025-10-12",
+    "summary": "A practical framework for building pipelines that are transparent, testable, and resilient to data drift.",
+    "tags": ["Pipelines", "Reproducibility", "NGS"],
+    "content": [
+      "Reproducibility starts with environment control. I prefer containerized workflows where every tool and dependency is versioned, and where parameters are logged alongside outputs.",
+      "The second pillar is modularity. Pipelines should be composed of small, testable steps that can be independently validated. This makes it easier to track failures, compare results, and update components without breaking the entire workflow.",
+      "Finally, documentation should be treated as part of the pipeline. Clear inputs, outputs, and expected artifacts allow collaborators to understand the intent of the analysis and trust the conclusions."
+    ]
+  },
+  {
+    "slug": "deep-learning-for-genomics",
+    "title": "Deep Learning for Genomics: What Works in Practice",
+    "date": "2025-08-03",
+    "summary": "Lessons learned from deploying deep learning models for sequence analysis and functional prediction.",
+    "tags": ["Deep Learning", "Genomics"],
+    "content": [
+      "Deep learning can capture subtle sequence patterns, but only when the data are curated and balanced. In genomics, mislabeled examples or uneven class representation can skew performance quickly.",
+      "Interpretability is essential. I prioritize model designs that allow feature attribution or motif discovery so that biological insight accompanies predictive accuracy.",
+      "Model evaluation should reflect real-world data. Cross-species validation and temporal splits reveal whether a model generalizes beyond the training dataset."
+    ]
+  },
+  {
+    "slug": "multi-omics-systems-biology",
+    "title": "From Sequences to Systems: A Multi-omics Perspective",
+    "date": "2025-06-18",
+    "summary": "Why integrated omics is crucial for understanding complex traits and host-pathogen interactions.",
+    "tags": ["Multi-omics", "Systems Biology"],
+    "content": [
+      "Single-omics analyses offer important signals, but the biology often lives in the interactions between layers: DNA, RNA, proteins, and metabolites.",
+      "Integration strategies should respect the statistical properties of each data type. Normalization, batch correction, and missing data handling are as important as the modeling itself.",
+      "The most successful multi-omics projects build iteratively: start with a core question, validate it experimentally, and expand the model as the evidence grows."
+    ]
+  }
+]

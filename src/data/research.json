@@ -1,0 +1,103 @@
+{
+  "statement": {
+    "title": "Advancing Bioinformatics Through Computational Innovation",
+    "paragraphs": [
+      "My research develops machine learning methods, bioinformatics tools, and data resources to analyze complex biological systems. I focus on genomics, transcriptomics, and host-pathogen interaction modeling, with an emphasis on building practical tools that are interpretable and reproducible.",
+      "I collaborate across disciplines to translate algorithms into accessible web resources and pipelines. My current work at South Dakota State University centers on AI-enabled discovery in agriculture and animal health, integrating multi-omics data to improve prediction and biological understanding."
+    ]
+  },
+  "areas": [
+    {
+      "title": "Multi-omics Data Integration",
+      "description": "Developing computational methods to merge genomics, transcriptomics, proteomics, and metabolomics for a systems-level view of biology.",
+      "details": [
+        "Algorithms for multi-omics data fusion",
+        "Machine learning for cross-platform analysis",
+        "Visualization of high-dimensional biological data",
+        "Statistical modeling of integrated signals"
+      ],
+      "technologies": ["Python", "R", "TensorFlow", "PyTorch", "Docker"]
+    },
+    {
+      "title": "AI in Genomics",
+      "description": "Applying deep learning to predict gene function, regulatory elements, and variant effects with interpretable, robust models.",
+      "details": [
+        "Deep learning models for genomic prediction",
+        "Interpretable AI for sequence analysis",
+        "Variant prioritization and functional scoring",
+        "Precision medicine applications"
+      ],
+      "technologies": ["PyTorch", "TensorFlow", "scikit-learn", "CUDA"]
+    },
+    {
+      "title": "Systems Biology",
+      "description": "Modeling biological networks and pathways to uncover mechanism-level insights and identify intervention points.",
+      "details": [
+        "Network analysis of biological systems",
+        "Metabolic pathway modeling",
+        "Gene regulatory network inference",
+        "Systems-level target discovery"
+      ],
+      "technologies": ["MATLAB", "Python", "Cytoscape", "MongoDB"]
+    },
+    {
+      "title": "Bioinformatics Tooling",
+      "description": "Designing databases, web servers, and analysis pipelines that make complex data usable for researchers.",
+      "details": [
+        "NGS workflows and automation",
+        "Specialized biological databases",
+        "Scalable backends and APIs",
+        "User-focused interface design"
+      ],
+      "technologies": ["Next.js", "Node.js", "PostgreSQL", "Docker"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "deepNEC",
+      "category": "Deep Learning in Genomics",
+      "description": "A deep learning framework for predicting nitrogen metabolism enzymes from protein sequences, providing interpretable insights into sequence-function relationships.",
+      "technologies": ["Python", "TensorFlow", "Keras", "Deep Learning"],
+      "year": "2022",
+      "image": "/images/research/deepnec.png",
+      "github": "https://github.com/navduhan/deepnec",
+      "link": "http://bioinfo.usu.edu/deepNEC/"
+    },
+    {
+      "title": "pySeqRNA",
+      "category": "RNA-Seq Analysis Pipeline",
+      "description": "A comprehensive RNA-Seq analysis package with automated QC, alignment, quantification, and differential expression workflows.",
+      "technologies": ["Python", "RNA-Seq", "NGS", "Data Visualization"],
+      "year": "2021",
+      "image": "/images/research/pyseqrna.png",
+      "github": "https://github.com/navduhan/pyseqrna",
+      "link": "http://bioinfo.usu.edu/pyseqrna/"
+    },
+    {
+      "title": "HuCoPIA",
+      "category": "Host-Pathogen Interactions",
+      "description": "An atlas of human-coronavirus protein interactions with network visualization and comparative analyses across Coronaviridae.",
+      "technologies": ["Proteomics", "Network Analysis", "Database"],
+      "year": "2020",
+      "image": "/images/research/hucopia.png",
+      "link": "http://bioinfo.usu.edu/hucopia/"
+    },
+    {
+      "title": "miPyRNA",
+      "category": "Small RNA Analysis",
+      "description": "A Python package for small RNA-seq analysis focused on microRNA identification, quantification, and target prediction.",
+      "technologies": ["Python", "Small RNA-Seq", "miRNA", "Statistics"],
+      "year": "2023",
+      "image": "/images/research/mipyrna.png",
+      "github": "https://github.com/navduhan/mipyrna"
+    }
+  ],
+  "cta": {
+    "title": "Open to collaborative research and tool development",
+    "description": "If you are working on genomics, host-pathogen interaction modeling, or AI-driven bioinformatics, I would love to collaborate.",
+    "button": {
+      "label": "Start a Collaboration",
+      "href": "/contact"
+    }
+  }
+}

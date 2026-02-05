@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Bioinformatics",
+    "items": [
+      "Genomics",
+      "Proteomics",
+      "Metagenomics",
+      "NGS Analysis",
+      "GWAS",
+      "Phylogenetics"
+    ]
+  },
+  {
+    "title": "Data Science",
+    "items": [
+      "Machine Learning",
+      "Statistical Modeling",
+      "Deep Learning",
+      "Data Visualization",
+      "Reproducible Pipelines"
+    ]
+  },
+  {
+    "title": "Programming",
+    "items": ["Python", "R", "JavaScript", "Bash", "SQL"]
+  },
+  {
+    "title": "Platforms and Tools",
+    "items": [
+      "Next.js",
+      "Docker",
+      "Git",
+      "Linux",
+      "HPC Clusters",
+      "AWS",
+      "Google Cloud"
+    ]
+  }
+]
