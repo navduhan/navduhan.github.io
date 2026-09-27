@@ -388,8 +388,14 @@ export default function HomePage() {
                     </div>
 
                     {item.department && (
-                      <div className="text-xs text-slate-500">
-                        {item.department} &bull; <span className="text-slate-600 font-medium">{item.specialization}</span>
+                      <div className="text-xs text-slate-500 font-mono">
+                        {item.department}
+                      </div>
+                    )}
+
+                    {item.subjects && (
+                      <div className="text-xs text-slate-600 font-medium">
+                        Subjects: {item.subjects}
                       </div>
                     )}
 

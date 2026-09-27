@@ -1,8 +1,7 @@
 {
   "education": [
     {
-      "degree": "Ph.D. in Plant Sciences",
-      "specialization": "Bioinformatics & Computational Biology",
+      "degree": "Ph.D. in Plant Sciences (Bioinformatics and Computational Biology)",
       "institution": "Utah State University",
       "department": "Department of Plants, Soils and Climate",
       "location": "Logan, UT, USA",
@@ -13,33 +12,27 @@
     },
     {
       "degree": "M.Sc. in Bioinformatics",
-      "specialization": "Computational Genomics & MicroRNA Discovery",
       "institution": "Punjabi University",
-      "department": "Department of Biotechnology",
-      "location": "Patiala, Punjab, India",
+      "location": "Patiala, India",
       "period": "Aug 2008 – Jul 2010",
       "thesis": "In Silico Prediction of MicroRNA in Catharanthus roseus and Their Role in Metabolomics",
       "badge": "Master's Degree"
     },
     {
       "degree": "B.Sc. in Biology",
-      "specialization": "Zoology, Botany, and Chemistry",
       "institution": "University College, Kurukshetra University",
-      "department": "Faculty of Science",
-      "location": "Kurukshetra, Haryana, India",
+      "location": "Kurukshetra, India",
       "period": "Jul 2005 – Jun 2008",
-      "thesis": null,
+      "subjects": "Zoology, Botany, Chemistry",
       "badge": "Bachelor's Degree"
     },
     {
-      "degree": "Certificate Diploma in Bioinformatics",
-      "specialization": "Biological Sequence Analysis & Computing",
-      "institution": "Kurukshetra University",
+      "degree": "Add-on Certificate Diploma in Bioinformatics",
       "department": "Department of Bioinformatics",
-      "location": "Kurukshetra, Haryana, India",
+      "institution": "Kurukshetra University",
+      "location": "Kurukshetra, India",
       "period": "2007 – 2008",
-      "thesis": null,
-      "badge": "Post-Secondary Diploma"
+      "badge": "Certificate Diploma"
     }
   ],
   "awards": [
