@@ -7,11 +7,13 @@ export default function Footer() {
         <div>
           &copy; {new Date().getFullYear()} Dr. Naveen Duhan &bull; South Dakota State University ADRDL
         </div>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-5 text-xs">
           <Link href="/" className="hover:text-sky-700">About</Link>
-          <Link href="/research-grants/" className="hover:text-sky-700">Grants</Link>
-          <Link href="/software-tools/" className="hover:text-sky-700">Software</Link>
+          <Link href="/research-grants/" className="hover:text-sky-700">Research &amp; Grants</Link>
+          <Link href="/software-tools/" className="hover:text-sky-700">Software &amp; Web Servers</Link>
           <Link href="/publications/" className="hover:text-sky-700">Publications</Link>
+          <Link href="/teaching/" className="hover:text-sky-700">Teaching</Link>
+          <Link href="/blog/" className="hover:text-sky-700 font-bold text-sky-700">Blog</Link>
           <Link href="/contact/" className="hover:text-sky-700">Contact</Link>
         </div>
       </div>
