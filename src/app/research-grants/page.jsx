@@ -104,8 +104,8 @@ export default function ResearchGrantsPage() {
             The Four Pillars of My Research Program
           </h2>
           <p className="text-slate-600 text-sm max-w-3xl">
-            Each pillar operates as a cohesive, autonomous computational workstream while feeding data, models,
-            and validation metrics into an integrated discovery engine.
+            Each pillar represents a fundamental thrust of my computational biology research program, operating synergistically
+            while contributing algorithms, datasets, and predictive models to an integrated discovery engine.
           </p>
         </div>
 

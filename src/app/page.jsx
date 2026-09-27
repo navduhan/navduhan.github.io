@@ -93,7 +93,7 @@ export default function HomePage() {
               href="/research-grants/"
               className="w-full py-2.5 rounded-xl bg-white hover:bg-sky-50 text-sky-700 border border-sky-300 font-semibold text-xs transition flex items-center justify-center gap-1.5 shadow-xs text-decoration-none"
             >
-              <span>Explore Research &amp; Workstreams</span>
+              <span>Explore Four Research Pillars</span>
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
               </svg>
@@ -140,13 +140,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4 AUTHENTIC NIH RESEARCH WORKSTREAMS (Replacing Generic AI Pillars) */}
+      {/* FOUR SCIENTIFIC RESEARCH PILLARS */}
       <section className="space-y-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-sky-100 pb-3 gap-2">
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
               <span className="w-2.5 h-1 rounded bg-sky-500" />
-              Research Program &bull; 4 Connected Workstreams
+              Research Program &bull; Four Scientific Pillars
             </div>
             <h2 className="text-2xl font-display font-bold text-slate-900 mt-1">
               Host–Pathogen Genomics &amp; Predictive Interactomes
@@ -156,111 +156,111 @@ export default function HomePage() {
             href="/research-grants/"
             className="text-xs font-mono font-bold text-sky-700 hover:text-sky-900 flex items-center gap-1 hover:underline"
           >
-            <span>View Full 5-Year Roadmap</span> &rarr;
+            <span>Explore Four Scientific Pillars</span> &rarr;
           </Link>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Workstream 1 */}
+          {/* Pillar 1 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-sky-500">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-mono font-bold">
-                WORKSTREAM 01
+                PILLAR 01
               </span>
               <span className="text-xs font-mono text-slate-400">pySeqRNA &bull; SegVira</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Genomic Surveillance &amp; Viral–Host Multi-Omics Discovery
+              Viral Surveillance &amp; Multi-Omics Discovery
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Determines how viral sequence variation relates to host transcriptional responses during infection and
-              cross-species spillover. Anchored in clade 2.3.4.4b H5N1 avian influenza at the animal–human interface, with
-              AMPV as an avian-restricted comparative baseline, paired with low-frequency intra-host variant (iSNV) calling.
+              Investigates the relationship between viral genomic variation and host transcriptional responses during infection,
+              reservoir maintenance, and cross-species spillover. Integrates targeted amplicon and metagenomic sequencing with host
+              transcriptomics to resolve low-frequency intra-host single nucleotide variants (iSNVs) and quasispecies diversity.
             </p>
             <div className="text-xs font-mono text-sky-700 pt-2 flex flex-wrap gap-2">
-              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Clade 2.3.4.4b H5N1</span>
-              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">AMPV-A / AMPV-B</span>
-              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">iSNV Calling (≥5%)</span>
+              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Viral Surveillance</span>
+              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Host Multi-Omics</span>
+              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">iSNV Profiling</span>
             </div>
           </div>
 
-          {/* Workstream 2 */}
+          {/* Pillar 2 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-cyan-500">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-800 text-xs font-mono font-bold">
-                WORKSTREAM 02
+                PILLAR 02
               </span>
-              <span className="text-xs font-mono text-slate-400">SKEMPI 2.0 &bull; PDBbind</span>
+              <span className="text-xs font-mono text-slate-400">deepNEC 2.0 &bull; deepHPI</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Context-Aware AI for Cross-Species Spillover Risk
+              Machine Learning &amp; Context-Aware AI for Interactions
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Evaluates whether sequence representations and host cellular context improve prediction of binding specificity
-              and cross-species interactomes. Treats protein receptors and glycan linkages (α-2,3 and α-2,6 sialic acids)
-              as distinct modalities to establish continuous biophysical predictions that prioritize spillover risk.
+              Develops multimodal machine learning architectures and protein language models that combine sequence representations,
+              structural interfaces, and host-receptor orthology. Predicts continuous biophysical binding affinities (ΔΔG) and receptor
+              specificity (including α-2,3 and α-2,6 sialic acids) to prioritize cross-species spillover risk.
             </p>
             <div className="text-xs font-mono text-teal-700 pt-2 flex flex-wrap gap-2">
+              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Protein Language Models</span>
               <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Continuous Affinities (ΔΔG)</span>
-              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Sialic Acid Glycan Arrays</span>
-              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Locked Holdouts (≥10% Margin)</span>
+              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Spillover Forecasting</span>
             </div>
           </div>
 
-          {/* Workstream 3 */}
+          {/* Pillar 3 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-indigo-500">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-indigo-100 text-indigo-800 text-xs font-mono font-bold">
-                WORKSTREAM 03
+                PILLAR 03
               </span>
-              <span className="text-xs font-mono text-slate-400">HuCoPIA &bull; deepHPI</span>
+              <span className="text-xs font-mono text-slate-400">HuCoPIA &bull; Host Atlases</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Systems Biology of Host Response &amp; Immune Interactomes
+              Comparative Systems Biology &amp; Host Immune Networks
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Investigates whether sequence-divergent strains converge on shared host-network perturbations. Tests how viral
-              polymerase adaptations alter interaction with host ANP32A/B replication co-factors across avian versus mammalian
-              species, and how non-structural mutations (NS1, PB1-F2) disrupt conserved RIG-I/MDA5 interferon induction.
+              Investigates how sequence-divergent pathogens converge on shared host regulatory networks. Analyzes species-specific
+              host co-factors (such as ANP32A/B) and viral disruption of conserved innate immune signaling pathways (RIG-I, MDA5,
+              interferon cascades) across reservoir species and susceptible hosts.
             </p>
             <div className="text-xs font-mono text-indigo-700 pt-2 flex flex-wrap gap-2">
-              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Host ANP32A/B Co-factors</span>
-              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">RIG-I / MDA5 Interferon</span>
-              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">DepMap CRISPR Auditing</span>
+              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Comparative Interactomics</span>
+              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Host Co-factors</span>
+              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Innate Immunity</span>
             </div>
           </div>
 
-          {/* Workstream 4 */}
+          {/* Pillar 4 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-[#ff671f]">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-orange-100 text-[#e65100] text-xs font-mono font-bold">
-                WORKSTREAM 04
+                PILLAR 04
               </span>
-              <span className="text-xs font-mono text-slate-400">Docker &bull; Singularity</span>
+              <span className="text-xs font-mono text-slate-400">Nextflow &bull; 19 Servers</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Open Tools, Containerized Workflows &amp; Evidence Portals
+              Reproducible Software Architecture &amp; Public Infrastructure
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Provides reproducible computational infrastructure across all phases. Releases containerized Nextflow workflows,
-              maintains versioned public Evidence Portals cataloging mutations and calibrated confidence intervals, and deploys
-              robust web resources serving the global scientific community.
+              Translates algorithmic discoveries into production-grade pipelines and publicly accessible web infrastructure.
+              Engineers containerized Nextflow DSL2 workflows (MetaNextViro) for high-performance computing clusters and maintains
+              19 public web servers accessed by over 24,000 researchers across 140 countries.
             </p>
             <div className="text-xs font-mono text-[#e65100] pt-2 flex flex-wrap gap-2">
               <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">Nextflow DSL2 Workflows</span>
-              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">Evidence Portal v1.0</span>
               <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">19 Deployed Web Platforms</span>
+              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">24,000+ Global Users</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* VERIFIED METHODOLOGICAL TRAJECTORY & RESEARCH PREPARATION */}
+      {/* VERIFIED METHODOLOGICAL TRAJECTORY & RESEARCH LEADERSHIP */}
       <section className="card-colorful p-8 md:p-12 space-y-6 bg-gradient-to-br from-white via-sky-50/40 to-blue-50/30">
         <div className="max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
             <span className="w-2.5 h-1 rounded bg-sky-500" />
-            Verified Methodological Trajectory &bull; Preparation for Independence
+            Research Vision &bull; Methodological Trajectory &bull; Research Leadership
           </div>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-900">
             From molecular classification to predictive host–pathogen interactomes.
@@ -295,9 +295,9 @@ export default function HomePage() {
               as first and co-corresponding author, and co-authored studies on PRRSV-2 diversity.
             </p>
             <div className="border-l-2 border-sky-500 pl-4 py-2 bg-sky-50/70 rounded-r-lg text-slate-800 text-xs md:text-sm font-medium">
-              "My proposed laboratory will develop computational methods to understand how viral genomic variation and host regulatory
-              networks shape infection outcomes across animal reservoirs and human populations. A central question is when host cellular
-              context explains differences in viral virulence that sequence alone cannot predict."
+              "My research program develops computational methods to understand how genomic variation and host regulatory
+              networks shape infection outcomes, cross-species spillover, and disease pathogenesis. A central question is how
+              cellular context and molecular networks explain differences in virulence and phenotype that sequence alone cannot predict."
             </div>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono font-bold">
               <Link href="/research-grants/" className="text-sky-700 hover:text-sky-900 underline underline-offset-4">
