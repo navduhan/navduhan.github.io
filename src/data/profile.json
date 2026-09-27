@@ -6,23 +6,36 @@
   "institution": "Animal Disease Research & Diagnostic Laboratory (ADRDL)",
   "department": "Department of Veterinary & Biomedical Sciences",
   "university": "South Dakota State University",
+  "office": "Room 118, Animal Disease Research and Diagnostic Laboratory",
+  "mailingAddress": "Animal Disease Research, Box 2175, University Station",
   "location": "Brookings, SD 57007, USA",
+  "phone": "605-688-4175",
   "email": "naveen.duhan@sdstate.edu",
+  "personalEmail": "naveen.duhan@outlook.com",
+  "website": "https://naveenduhan.com",
   "github": "https://github.com/navduhan",
+  "linkedin": "https://linkedin.com/in/navduhan",
   "orcid": "0000-0002-3958-3729",
   "phd": {
-    "field": "Computational Biology & Genomics",
+    "field": "Plant Sciences (Bioinformatics and Computational Biology)",
     "institution": "Utah State University",
-    "conferred": "December 2024"
+    "conferred": "December 2024",
+    "advisor": "Dr. Rakesh Kaundal",
+    "thesis": "Machine Learning and Data Mining in Complex Genomics Big Data: Developing Efficient Tools to Advance Computational Systems Biology"
   },
   "metrics": {
-    "grantsFunding": "$1,948,992",
-    "globalUsers": "24,000+",
-    "countries": "140+",
+    "grantsFunding": "$2.27M",
+    "activeGrants": "$2,269,435",
+    "aphisAward": "$1,969,435",
+    "sdsuSubaward": "$799,443",
     "publications": 34,
+    "firstAuthorPubs": 12,
+    "citations": "416+",
+    "hIndex": 10,
+    "i10Index": 10,
     "softwarePackages": 9,
-    "webServers": 19,
-    "citations": "700+"
+    "webServers": 13,
+    "globalUsers": "11,000+"
   },
   "fiveYearVision": {
     "title": "Predictive Genomics of Viral Emergence and Host Response",

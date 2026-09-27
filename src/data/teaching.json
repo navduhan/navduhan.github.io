@@ -1,21 +1,27 @@
 {
   "philosophy": {
     "title": "Pedagogical Philosophy & Educational Vision",
-    "summary": "Bridging abstract biological concepts with hands-on computational execution. I design courses and workshops that treat command-line proficiency, reproducible version control, and rigorous algorithmic reasoning as core competencies for modern life scientists.",
+    "summary": "Bridging abstract biological concepts with hands-on computational execution. Equipping life scientists with command-line proficiency, reproducible workflows, and rigorous algorithmic reasoning as core competencies for modern genomics.",
     "pillars": [
       {
-        "title": "Active, Terminal-First Learning",
-        "description": "Every lecture is paired with real-world computational problem sets where students analyze actual sequencing data rather than synthetic toy examples."
+        "title": "Hands-On, Terminal-First Learning",
+        "description": "Pairing computational lectures with real-world biological datasets, teaching students to work directly in Linux, Python, and R environments."
       },
       {
-        "title": "Reproducibility as a Core Value",
-        "description": "Teaching Git version control, containerized environments (Docker/Singularity), and workflow orchestrators (Nextflow) from day one."
+        "title": "Reproducibility as a Core Standard",
+        "description": "Instilling best practices in version control (Git), containerization, and reproducible bioinformatics workflows from the outset."
       },
       {
-        "title": "Inclusive Mentorship & Trainee Ownership",
-        "description": "Empowering students through transparent authorship compacts, weekly 1-on-1 milestone tracking, and individualized development plans (IDPs)."
+        "title": "Individualized Mentorship & Ownership",
+        "description": "Guiding undergraduate and graduate students to master analytical pipelines, formulate hypotheses, interpret multi-omics data, and communicate findings."
       }
     ]
+  },
+  "curriculumDevelopment": {
+    "title": "ICAR 5th Dean Committee Curriculum Revision",
+    "period": "2013 – 2018",
+    "institution": "Punjab Agricultural University, Ludhiana, India",
+    "description": "Designed 8 courses for the Bioinformatics module in B. Tech Biotechnology Degree under Indian Council of Agricultural Research (ICAR) 5th Dean committee for national course revision."
   },
   "courses": [
     {
@@ -23,15 +29,15 @@
       "title": "Bioinformatics and Big Data Mining",
       "institution": "Utah State University",
       "location": "Logan, UT, USA",
-      "level": "Combined Graduate / Undergraduate",
+      "level": "Graduate / Undergraduate",
       "term": "2022",
-      "role": "Instructor / Lab Lead",
+      "role": "Teaching / Laboratory Instruction",
       "description": "Advanced computational methods for biological big data: high-throughput sequencing analysis, sequence alignment algorithms, structural modeling, machine learning in genomics, and high-performance computing cluster utilization.",
       "topics": [
         "Sequence Alignment & Dynamic Programming (Needleman-Wunsch, Smith-Waterman)",
-        "NGS Quality Control & Variant Calling Pipelines (GATK, FreeBayes)",
-        "Machine Learning Classifiers in Scikit-Learn and PyTorch",
-        "Slurm HPC Job Scheduling & Shell Scripting"
+        "NGS Quality Control & Variant Calling Pipelines",
+        "Machine Learning Applications in Biological Data",
+        "HPC Job Scheduling & Shell Scripting"
       ]
     },
     {
@@ -40,9 +46,9 @@
       "institution": "Punjab Agricultural University",
       "location": "Ludhiana, India",
       "level": "Graduate (M.S. & Ph.D.)",
-      "term": "2013 – 2018 (Annual)",
-      "role": "Sole Instructor (Course Delivery, Practicals & Grading)",
-      "description": "Comprehensive graduate curriculum covering biological databases, molecular phylogenetics, pairwise and multiple sequence alignment, protein secondary structure prediction, and applied crop genomics.",
+      "term": "2013 – 2018",
+      "role": "Teaching Assistant, Bioinformatics",
+      "description": "Graduate curriculum covering biological databases, molecular phylogenetics, pairwise and multiple sequence alignment, protein secondary structure prediction, and applied crop genomics.",
       "topics": [
         "Biological Data Mining & NCBI / Ensembl E-utilities",
         "Multiple Sequence Alignment (Clustal, MUSCLE, MAFFT)",
@@ -55,14 +61,14 @@
       "title": "Advances in Bioinformatics",
       "institution": "Punjab Agricultural University",
       "location": "Ludhiana, India",
-      "level": "Advanced Graduate (Ph.D.)",
-      "term": "2013 – 2018 (Annual)",
-      "role": "Sole Instructor",
-      "description": "In-depth doctoral seminar on emerging computational frontiers: comparative genomics, transcriptomic differential expression modeling, protein-protein interaction networks, and structural docking algorithms.",
+      "level": "Graduate (Ph.D.)",
+      "term": "2013 – 2018",
+      "role": "Teaching Assistant, Bioinformatics",
+      "description": "Doctoral curriculum on computational frontiers: comparative genomics, transcriptomic differential expression modeling, protein-protein interaction networks, and structural docking algorithms.",
       "topics": [
         "Transcriptome Assembly & Differential Expression (DESeq2, edgeR)",
-        "Protein-Protein Interactome Modeling & Graph Centrality",
-        "Molecular Docking & Virtual Screening (AutoDock Vina)",
+        "Protein-Protein Interactome Modeling & Network Analysis",
+        "Molecular Docking & Virtual Screening",
         "Hidden Markov Models (HMMs) in Gene Prediction"
       ]
     },
@@ -72,9 +78,9 @@
       "institution": "Punjab Agricultural University",
       "location": "Ludhiana, India",
       "level": "Undergraduate (B.Tech Biotechnology)",
-      "term": "2013 – 2018 (Annual)",
-      "role": "Sole Instructor",
-      "description": "Foundational course establishing core computational competencies for undergraduate biotechnology majors, including Linux shell basics, sequence formats, and web-based analytical servers.",
+      "term": "2013 – 2018",
+      "role": "Teaching Assistant, Bioinformatics",
+      "description": "Foundational course establishing core computational competencies for undergraduate biotechnology majors, including Linux shell basics, sequence formats, and analytical servers.",
       "topics": [
         "Unix / Linux Operating System Essentials",
         "Biological Sequence Formats (FASTA, FASTQ, SAM/BAM, GFF3)",
@@ -89,10 +95,10 @@
       "location": "Ludhiana, India",
       "level": "Undergraduate",
       "term": "2013 – 2018",
-      "role": "Sole Instructor",
-      "description": "High-throughput technologies in genomics and proteomics: whole-genome shotgun sequencing, microarrays, mass spectrometry data analysis, and functional annotation of uncharacterized proteins.",
+      "role": "Teaching Assistant, Bioinformatics",
+      "description": "High-throughput technologies in genomics and proteomics: whole-genome sequencing, microarrays, mass spectrometry data analysis, and functional annotation of proteomes.",
       "topics": [
-        "Next-Generation Sequencing Platforms (Illumina, Oxford Nanopore)",
+        "Next-Generation Sequencing Platforms & Quality Control",
         "De Novo Genome Assembly & Scaffolding",
         "Mass Spectrometry Peptide Identification & UniProt Proteomes",
         "Gene Ontology (GO) Enrichment & Pathway Analysis"
@@ -105,78 +111,78 @@
       "location": "Ludhiana, India",
       "level": "Undergraduate",
       "term": "2013 – 2018",
-      "role": "Sole Instructor",
+      "role": "Teaching Assistant, Bioinformatics",
       "description": "Mathematical models in molecular biology, algorithm design for biological strings, population genetics modeling, and computational scripting.",
       "topics": [
         "Dynamic Programming Algorithms",
         "Markov Chains & Sequence Motif Discovery",
         "Hardy-Weinberg Equilibrium & Population Genetics Metrics",
-        "Introduction to Python Scripting for Biologists"
+        "Python Scripting for Biologists"
       ]
     },
     {
       "code": "Biotech 499",
-      "title": "In-house Hands-On Computational Training",
+      "title": "In-house Training",
       "institution": "Punjab Agricultural University",
       "location": "Ludhiana, India",
-      "level": "Undergraduate Capstone / Internship",
+      "level": "Undergraduate",
       "term": "2013 – 2018",
-      "role": "Coordinator & Lead Mentor",
-      "description": "Intensive semester-long capstone internship supervising senior undergraduate researchers on dedicated bioinformatics software development and genomic analysis projects.",
+      "role": "Teaching Assistant, Bioinformatics",
+      "description": "Supervised hands-on research training and practical sessions for undergraduate biotechnology students in computational biology and bioinformatics tools.",
       "topics": [
-        "Independent Project Architecture & Milestones",
+        "Research Project Execution & Milestone Tracking",
         "Scientific Code Documentation & Version Control",
-        "Final Capstone Thesis & Oral Defense Preparation"
+        "Data Curation & Presentation of Results"
       ]
     }
   ],
   "workshops": [
     {
-      "title": "NGS Data Analysis Workshop: From FastQ to Differential Expression",
-      "audience": "Graduate Students, Postdocs & Faculty Researchers",
-      "duration": "3-Day Intensive Boot Camp",
-      "description": "Hands-on immersion covering quality control, splice-aware alignment (STAR), read quantification, differential gene expression (DESeq2), and interactive pathway visualization using pySeqRNA.",
-      "stack": "Linux • pySeqRNA • STAR • DESeq2 • R/Python"
+      "title": "NGS Data Analysis Workshop",
+      "audience": "Graduate Students, Postdocs & Life Science Researchers",
+      "duration": "Hands-On Training",
+      "description": "Hands-on training on RNA-Seq, ChIP-Seq, and variant calling pipelines.",
+      "stack": "Linux • RNA-Seq • ChIP-Seq • Variant Calling"
     },
     {
-      "title": "Linux Command-Line & HPC Cluster Scripting for Biologists",
-      "audience": "Life Scientists & Wet-Lab Diagnosticians",
-      "duration": "2-Day Practical Workshop",
-      "description": "Designed to transform bench biologists into confident computational practitioners: bash scripting, text manipulation (grep, awk, sed), SSH remote computing, and Slurm workload submission.",
-      "stack": "Bash • SSH • Slurm • Environment Modules"
+      "title": "Linux for Biologists",
+      "audience": "Life Scientists & Diagnosticians",
+      "duration": "Practical Training",
+      "description": "Command-line tools and scripting for biological data analysis.",
+      "stack": "Bash • Linux Commands • Text Processing • Shell Scripting"
     },
     {
-      "title": "Machine Learning in Bioinformatics: Deep Learning & Sequence Models",
+      "title": "Machine Learning in Bioinformatics",
       "audience": "Bioinformaticians & Quantitative Biologists",
-      "duration": "2-Day Workshop",
-      "description": "Introduction to supervised and unsupervised machine learning in genomics: feature encoding (k-mers, one-hot, embeddings), random forests, convolutional neural networks, and protein language model inference.",
-      "stack": "Python • Scikit-Learn • PyTorch • Google Colab"
+      "duration": "Python-Based Workshop",
+      "description": "Python-based workshops on machine learning applications in biological data.",
+      "stack": "Python • Scikit-Learn • Deep Learning • Sequence Models"
     }
   ],
   "mentoring": [
     {
-      "period": "2023 – Present",
+      "period": "Nov 2023 – Present",
       "institution": "South Dakota State University (ADRDL)",
-      "role": "Senior Computational Mentor",
-      "details": "Mentor Ph.D. and M.S. graduate students and diagnostic laboratory personnel in computational genomics, Nextflow DSL2 pipelines, viral phylogenetics, and amplicon sequencing workflows for real-time outbreak surveillance."
+      "role": "Research Associate III, Bioinformatics",
+      "details": "Mentor graduate students in bioinformatics methods and project design, developing computational algorithms for viral genome analysis and disease surveillance."
     },
     {
-      "period": "2019 – 2023",
-      "institution": "Utah State University (Bioinformatics Lab)",
-      "role": "Doctoral Researcher & Peer Mentor",
-      "details": "Mentored undergraduate and master's researchers in machine learning pipeline architecture, deep neural network training, reproducible benchmarking, and web server deployment across kaabil.net and bioinfo.usu.edu."
+      "period": "Jan 2019 – Nov 2023",
+      "institution": "Utah State University",
+      "role": "Graduate Research Assistant",
+      "details": "Mentored undergraduate and graduate researchers in machine learning pipelines for RNA-Seq, genome annotation, and variant analysis, and conducted workshops on NGS and Linux."
     },
     {
-      "period": "2011 – 2018",
+      "period": "Aug 2011 – Dec 2018",
       "institution": "Punjab Agricultural University",
-      "role": "Bioinformatician",
-      "details": "Supervised more than 30 undergraduate capstone theses and co-advised graduate research projects in plant genomics, molecular marker discovery, and computational software development."
+      "role": "Teaching Assistant, Bioinformatics",
+      "details": "Assisted in teaching graduate and undergraduate courses in bioinformatics, genomics, and computational biology; supervised student research projects and laboratory sessions."
     },
     {
-      "period": "2010 – 2011",
-      "institution": "Guru Nanak Girls College",
-      "role": "Lecturer",
-      "details": "Supervised undergraduate research projects and laboratory internships in biotechnology and sequence analysis, actively fostering STEM retention and research careers for women scientists."
+      "period": "Jul 2010 – Aug 2011",
+      "institution": "Guru Nanak Girls College, Ludhiana",
+      "role": "Lecturer, Bioinformatics",
+      "details": "Taught undergraduate courses in bioinformatics and biotechnology, and supervised student research projects and internships."
     }
   ]
 }

@@ -64,11 +64,11 @@ export default function TeachingPage() {
             Formal University Curricula (7 Courses)
           </div>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-900">
-            University Courses Taught
+            University Courses &amp; Teaching Experience
           </h2>
           <p className="text-slate-600 text-sm max-w-3xl">
-            Courses delivered across Utah State University and Punjab Agricultural University, with comprehensive
-            responsibility for syllabus design, lectures, practical computational laboratories, and student assessment.
+            Instructional record across Utah State University and Punjab Agricultural University, spanning graduate
+            and undergraduate lecture courses, computational laboratory sessions, and curriculum revision.
           </p>
         </div>
 
@@ -130,6 +130,29 @@ export default function TeachingPage() {
           })}
         </div>
       </section>
+
+      {/* CURRICULUM DEVELOPMENT FROM CV */}
+      {teaching.curriculumDevelopment && (
+        <section className="card-colorful p-6 md:p-8 bg-gradient-to-r from-emerald-50/70 via-sky-50/40 to-white border-l-6 border-l-emerald-600 space-y-2">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <span className="px-2.5 py-0.5 rounded font-mono text-xs font-bold bg-emerald-100 text-emerald-800">
+              National Curriculum Development
+            </span>
+            <span className="text-xs font-mono text-slate-500 font-medium">
+              {teaching.curriculumDevelopment.period}
+            </span>
+          </div>
+          <h3 className="text-lg md:text-xl font-display font-bold text-slate-900">
+            {teaching.curriculumDevelopment.title}
+          </h3>
+          <p className="text-xs font-mono text-emerald-800 font-semibold">
+            {teaching.curriculumDevelopment.institution}
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed pt-1">
+            {teaching.curriculumDevelopment.description}
+          </p>
+        </section>
+      )}
 
       {/* SECTION 3: WORKSHOPS & TECHNICAL CAPACITY BUILDING */}
       <section className="space-y-6">

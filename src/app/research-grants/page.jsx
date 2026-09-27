@@ -3,7 +3,7 @@ import profile from "@/data/profile.json";
 
 export const metadata = {
   title: "Research & Four Pillars — Dr. Naveen Duhan",
-  description: "Four research pillars in computational biology: genomic surveillance, context-aware AI, comparative systems biology, and reproducible software infrastructure, supported by $1.95M in research funding.",
+  description: "Four research pillars in computational biology: genomic surveillance, context-aware AI, comparative systems biology, and reproducible software infrastructure, supported by $2.27M in active research funding.",
 };
 
 const FOUR_PILLARS = [
@@ -61,12 +61,12 @@ const FOUR_PILLARS = [
     tagline: "Translating algorithmic research into production-grade pipelines and accessible global platforms",
     accentColor: "border-[#ff671f]",
     badgeBg: "bg-orange-100 text-[#e65100]",
-    coreTools: ["Nextflow DSL2", "Docker / Singularity", "19 Deployed Web Servers"],
+    coreTools: ["Nextflow DSL2", "Docker / Singularity", "Software & 13 Web Resources"],
     description:
       "Scientific discovery is accelerated when complex computational workflows are accessible, reproducible, and easy to run across heterogeneous computing environments. This pillar focuses on architecting enterprise-grade pipelines and publicly deployed web portals that serve the international research community.",
     keyDirections: [
       "Engineering modular, containerized Nextflow DSL2 pipelines (MetaNextViro) with native support for Slurm HPC clusters, Docker, and Singularity runtime environments.",
-      "Deploying and maintaining 19 interactive public web servers and databases accessed by more than 24,000 researchers across 140 countries (kaabil.net and bioinfo.usu.edu).",
+      "Deploying and maintaining interactive public web servers and databases accessed by researchers worldwide (kaabil.net and bioinfo.usu.edu).",
       "Developing well-documented, open-source Python packages distributed via PyPI, GitHub, and Zenodo with checksum-verified model weights and versioned regression testing.",
       "Building evidence-linked portals that present raw sequences, variant calls, and machine learning predictions with auditable provenance and confidence intervals.",
     ],
@@ -74,23 +74,46 @@ const FOUR_PILLARS = [
 ];
 
 export default function ResearchGrantsPage() {
+  const activeGrants = grants.filter((g) => g.status === "Awarded" || g.status === "Active");
+  const submittedGrants = grants.filter((g) => g.status === "Submitted");
+
   return (
     <main className="max-w-6xl mx-auto px-6 py-12 space-y-16">
       {/* Page Header */}
       <div className="space-y-4 border-b border-sky-100 pb-8">
         <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
           <span className="w-2.5 h-1 rounded bg-sky-500" />
-          Research Vision &bull; Computational Biology &bull; $1.95M Awarded Grants
+          Research Vision &bull; Computational Biology &bull; $2.27M Active Grants
         </div>
         <h1 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight">
           Research Programs &amp; Four Scientific Pillars
         </h1>
         <p className="text-base md:text-lg text-slate-600 max-w-4xl leading-relaxed">
-          My computational biology laboratory investigates how viral genomic variation and host regulatory networks
+          My computational biology program investigates how viral genomic variation and host regulatory networks
           shape infection outcomes, cross-species spillover, and disease severity. By uniting high-throughput diagnostic
           sequencing with context-aware machine learning and scalable web engineering, our work bridges molecular
           mechanism with real-time epidemiological impact.
         </p>
+
+        {/* Domain Tags Strip */}
+        <div className="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono">
+          <span className="text-slate-400 font-semibold text-[11px] uppercase tracking-wider mr-1">Scientific Domains:</span>
+          {[
+            "Viral Surveillance",
+            "Host-Pathogen Interactomes",
+            "Deep Learning & AI",
+            "Protein Language Models",
+            "Nextflow DSL2",
+            "Metagenomics",
+            "Multi-Omics Integration",
+            "Crop Bioinformatics",
+            "Structural Modeling"
+          ].map((tag, i) => (
+            <span key={i} className="px-2.5 py-1 rounded-md bg-white border border-sky-200 text-sky-800 font-medium shadow-2xs">
+              #{tag.replace(/\s+/g, "")}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* SECTION 1: DEEP EXPLANATION OF THE FOUR PILLARS */}
@@ -159,44 +182,28 @@ export default function ResearchGrantsPage() {
         </div>
       </section>
 
-      {/* SECTION 2: COMPETITIVE AWARDED GRANT PORTFOLIO ($1.95M) */}
+      {/* SECTION 2: COMPETITIVE AWARDED & ACTIVE GRANT PORTFOLIO ($2.27M) */}
       <section className="space-y-8 pt-4">
         <div className="space-y-2 border-b border-sky-100 pb-4">
           <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-emerald-800">
             <span className="w-2 h-2 rounded-full bg-[#138808]" />
-            Funding Portfolio &bull; $1,948,992 in Total Grants
+            Active Funding Portfolio &bull; $2,269,435 in Awarded Grants
           </div>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-900">
             Awarded &amp; Active Research Grants
           </h2>
           <p className="text-slate-600 text-sm max-w-3xl">
-            Federal and foundation awards supporting pathogen genomic surveillance, host interactomics, and
-            rapid outbreak intervention across poultry and livestock systems.
+            Federal and foundation awards supporting pathogen genomic surveillance, host-pathogen interactomics,
+            and rapid outbreak diagnostic intervention across agricultural and biological systems.
           </p>
         </div>
 
         <div className="space-y-6">
-          {grants.map((grant) => {
+          {activeGrants.map((grant) => {
             const isAphis = grant.agency.includes("APHIS");
-            const isNifa = grant.agency.includes("NIFA");
-
-            const borderClass = isAphis
-              ? "border-l-sky-600"
-              : isNifa
-              ? "border-l-emerald-600"
-              : "border-l-[#ff671f]";
-
-            const badgeBg = isAphis
-              ? "bg-sky-100 text-sky-800"
-              : isNifa
-              ? "bg-emerald-100 text-emerald-800"
-              : "bg-orange-50 text-[#e65100] border border-orange-200";
-
-            const amountColor = isAphis
-              ? "text-sky-800"
-              : isNifa
-              ? "text-emerald-800"
-              : "text-[#ff671f]";
+            const borderClass = isAphis ? "border-l-sky-600" : "border-l-emerald-600";
+            const badgeBg = isAphis ? "bg-sky-100 text-sky-800" : "bg-emerald-100 text-emerald-800";
+            const amountColor = isAphis ? "text-sky-800" : "text-emerald-800";
 
             return (
               <div
@@ -245,7 +252,58 @@ export default function ResearchGrantsPage() {
         </div>
       </section>
 
-      {/* SECTION 3: COLLABORATIVE PHILOSOPHY & SCIENTIFIC HORIZONS */}
+      {/* SECTION 3: SUBMITTED PROPOSALS & UNDER REVIEW */}
+      {submittedGrants.length > 0 && (
+        <section className="space-y-6 pt-4">
+          <div className="space-y-2 border-b border-sky-100 pb-4">
+            <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-amber-800">
+              <span className="w-2 h-2 rounded-full bg-amber-500" />
+              Proposals in Pipeline &bull; $2,100,500 Under Review
+            </div>
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-900">
+              Submitted Proposals &amp; Grants Under Review
+            </h2>
+            <p className="text-slate-600 text-sm max-w-3xl">
+              Competitive research proposals submitted as Principal Investigator (PI) and Co-Investigator to USDA-AFRI
+              and NIH R21 programs.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {submittedGrants.map((grant) => (
+              <div
+                key={grant.id}
+                className="card-colorful p-6 border-l-4 border-l-amber-400 bg-white space-y-3 flex flex-col justify-between"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-xs font-mono">
+                    <span className="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold">
+                      {grant.agency} &bull; {grant.role}
+                    </span>
+                    <span className="font-bold text-slate-800 font-mono text-sm">{grant.amount}</span>
+                  </div>
+                  <h3 className="font-display font-bold text-slate-900 text-base leading-snug">
+                    {grant.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
+                    {grant.description}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100 text-[11px] font-mono">
+                  {grant.tags.map((tag) => (
+                    <span key={tag} className="bg-slate-50 border border-slate-200 text-slate-600 px-2 py-0.5 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* SECTION 4: COLLABORATIVE PHILOSOPHY & SCIENTIFIC HORIZONS */}
       <section className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-sky-950 via-slate-900 to-slate-950 text-white space-y-6 border border-sky-800/50 shadow-xl">
         <div className="space-y-2">
           <div className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
@@ -258,13 +316,13 @@ export default function ResearchGrantsPage() {
         <div className="grid md:grid-cols-2 gap-8 text-slate-300 text-sm md:text-base leading-relaxed">
           <p>
             Computational biology is at its best when algorithms are continually calibrated against real diagnostic
-            samples and biological reality. By anchoring our computational pipelines directly in diagnostic workflows
-            at South Dakota State University's ADRDL, our tools are tested against high-throughput real-world sequencing
-            runs rather than idealized theoretical datasets.
+            samples and biological reality. By anchoring our computational pipelines directly in high-throughput sequencing
+            workflows and active pathogen outbreak surveillance, our tools are tested against real-world biological complexity
+            rather than idealized theoretical datasets.
           </p>
           <p>
             Whether uncovering novel zoonotic spillover markers, building containerized Nextflow pipelines for high-performance
-            clusters, or deploying accessible web servers for global scientists, my laboratory is committed to open, reproducible,
+            clusters, or deploying accessible web servers for global scientists, my program is committed to open, reproducible,
             and interdisciplinary computational science.
           </p>
         </div>
@@ -273,7 +331,7 @@ export default function ResearchGrantsPage() {
             href="/software-tools/"
             className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold transition flex items-center gap-1.5"
           >
-            <span>Explore 9 Packages &amp; 19 Web Servers</span> &rarr;
+            <span>Explore 9 Packages &amp; 13 Web Resources</span> &rarr;
           </a>
           <a
             href="/publications/"

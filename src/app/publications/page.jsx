@@ -12,7 +12,7 @@ export default function PublicationsPage() {
       <div className="space-y-3 border-b border-sky-100 pb-6">
         <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
           <span className="w-2.5 h-1 rounded bg-sky-500" />
-          Peer-Reviewed Research &bull; 34 Published Works &bull; 700+ Citations
+          Peer-Reviewed Research &bull; 34 Published Works &bull; 416+ Citations &bull; h-index 10
         </div>
         <h1 className="text-3xl md:text-4xl font-display font-extrabold text-slate-900">
           Publications &amp; Scientific Output

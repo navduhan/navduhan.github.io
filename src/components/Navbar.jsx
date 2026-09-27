@@ -35,9 +35,9 @@ export default function Navbar() {
             </span>
           </div>
           <div className="flex items-center gap-3 text-slate-600 text-[11px] sm:text-xs">
-            <span className="hidden sm:inline text-slate-400">Global Web Reach:</span>
+            <span className="hidden sm:inline text-slate-400">Open-Source Impact:</span>
             <span className="font-bold text-sky-900 bg-sky-100/70 px-2 py-0.5 rounded border border-sky-200 font-mono-nums">
-              24,000+ Researchers &bull; 140+ Countries
+              9 Packages &bull; 13 Web Resources
             </span>
           </div>
         </div>

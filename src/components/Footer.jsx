@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="mt-24 border-t border-sky-100 bg-white py-12 px-6 text-xs text-slate-500">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 font-mono">
         <div>
-          &copy; {new Date().getFullYear()} Dr. Naveen Duhan &bull; South Dakota State University ADRDL
+          &copy; {new Date().getFullYear()} Dr. Naveen Duhan &bull; Computational Biologist
         </div>
         <div className="flex flex-wrap gap-5 text-xs">
           <Link href="/" className="hover:text-sky-700">About</Link>

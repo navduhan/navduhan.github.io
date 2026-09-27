@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Dr. Naveen Duhan — Bioinformatician & Full-Stack Systems Architect",
-  description: "Research Associate III in Bioinformatics at South Dakota State University ADRDL. Predictive genomics of viral emergence, AI enzyme classification, and scalable web software.",
+  title: "Dr. Naveen Duhan — Computational Biologist & Bioinformatician",
+  description: "Personal academic portfolio of Dr. Naveen Duhan, Ph.D. — Computational Biologist specializing in viral genomics, sequence-based machine learning, host-pathogen interactomics, and scalable bioinformatics software.",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },

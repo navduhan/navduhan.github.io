@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="lg:col-span-8 space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-sky-50 to-cyan-50 border border-sky-200/80 text-sky-800 text-xs font-semibold uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-[#138808]" />
-            Computational Biologist &bull; ADRDL South Dakota State University
+            Computational Biologist &bull; Genomics &bull; Machine Learning &bull; Systems Biology
           </div>
 
           <h1 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight leading-[1.15]">
@@ -25,9 +25,8 @@ export default function HomePage() {
 
           <p className="text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
             I develop computational methods for genomic and transcriptomic analysis, sequence-based machine learning,
-            and molecular interactomes. At South Dakota State University's Animal Disease Research and Diagnostic
-            Laboratory (ADRDL), I lead computational genomics for surveillance and host diagnostics, directing bioinformatics
-            infrastructure for emerging viral pathogens and respiratory disease outbreaks.
+            and molecular interactomes. My work delivers advanced bioinformatics infrastructure, high-throughput surveillance
+            pipelines, and predictive algorithms for emerging viral pathogens and disease outbreaks.
           </p>
 
           {/* Quick Credentials Strip */}
@@ -36,12 +35,34 @@ export default function HomePage() {
               🎓 Ph.D. Dec 2024 &bull; Utah State University
             </span>
             <span className="px-3 py-1.5 rounded-lg bg-white border border-sky-100 text-slate-700 font-semibold shadow-xs">
-              🏢 ADRDL Research Associate III
+              🧬 Computational Biologist &bull; Bioinformatician
             </span>
             <span className="px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-[#138808] font-semibold shadow-xs flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#138808]" />
-              $1.95M Awarded Grant Portfolio
+              $2.27M Active Grant Portfolio
             </span>
+          </div>
+
+          {/* Scientific Domain & Technology Tags */}
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono">
+            <span className="text-slate-400 font-bold text-[11px] uppercase tracking-wider mr-1">Focus Areas:</span>
+            {[
+              "Viral Surveillance",
+              "Deep Learning & AI",
+              "Host-Pathogen Interactomes",
+              "Multi-Omics Integration",
+              "Nextflow DSL2",
+              "Enzyme Classification",
+              "MicroRNA Discovery",
+              "HPC Workflows"
+            ].map((tag, i) => (
+              <span
+                key={i}
+                className="px-2.5 py-1 rounded-md bg-white border border-sky-200 text-sky-800 text-[11px] font-semibold shadow-2xs hover:border-sky-400 transition"
+              >
+                #{tag.replace(/\s+/g, "")}
+              </span>
+            ))}
           </div>
         </div>
 
@@ -58,8 +79,8 @@ export default function HomePage() {
               />
               <div>
                 <h3 className="font-display font-bold text-slate-900 text-lg">Dr. Naveen Duhan</h3>
-                <p className="text-xs text-sky-700 font-semibold">Animal Disease Research &amp; Diagnostic Lab</p>
-                <p className="text-[11px] text-slate-500 font-mono">naveen.duhan@sdstate.edu</p>
+                <p className="text-xs text-sky-700 font-semibold">Computational Biology &amp; Genomics</p>
+                <p className="text-[11px] text-slate-500 font-mono">naveen.duhan@outlook.com</p>
               </div>
             </div>
 
@@ -85,7 +106,7 @@ export default function HomePage() {
               <div className="flex justify-between items-center">
                 <span className="text-slate-500 font-medium">Software &amp; Web Resources</span>
                 <span className="font-bold text-[#138808] bg-emerald-50 px-2 py-0.5 rounded font-mono-nums">
-                  9 Packages &bull; 19 Servers
+                  9 Packages &bull; 13 Resources
                 </span>
               </div>
             </div>
@@ -131,12 +152,12 @@ export default function HomePage() {
 
           <div className="md:col-span-4 flex flex-col gap-3 justify-center items-start md:items-end">
             <Link href="/research-grants/" className="btn-saffron text-sm text-decoration-none">
-              <span>View All $1.95M Grants</span>
+              <span>View All $2.27M Grants</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </Link>
-            <span className="text-xs text-sky-200 font-mono">Co-I on USDA-NIFA ($500K) &amp; FFAR ($300K)</span>
+            <span className="text-xs text-sky-200 font-mono">Co-PI on USDA-APHIS ($1.97M) &amp; FFAR ($300K)</span>
           </div>
         </div>
       </section>
@@ -280,20 +301,20 @@ export default function HomePage() {
             </p>
             <p>
               I next expanded this foundation to transcriptomics and interactomics. To integrate expression dynamics with interactome
-              networks, I developed <strong className="text-slate-900 font-semibold">pySeqRNA</strong> (500+ users), and as first
+              networks, I developed <strong className="text-slate-900 font-semibold">pySeqRNA</strong>, and as first
               author of <strong className="text-slate-900 font-semibold">HuCoPIA</strong>, conceived a coronavirus interactome atlas
               spanning viral families. For <strong className="text-slate-900 font-semibold">deepHPI</strong>, I designed feature
-              extraction and modeling pipelines achieving AUROC &gt; 0.90, part of 19 deployed web servers accessed by &gt;24,000
-              researchers across 140 countries.
+              extraction and modeling pipelines achieving AUROC &gt; 0.90, part of 13 deployed software packages and web resources
+              accessed by researchers worldwide.
             </p>
           </div>
 
           <div className="space-y-4">
             <p>
-              At South Dakota State University's Animal Disease Research and Diagnostic Laboratory (ADRDL), I translated these
-              capabilities into pathogen surveillance and research leadership. To track rapidly evolving viruses during outbreaks,
-              I led computational genomics for our 2026 targeted amplicon sequencing study of 91 avian metapneumovirus (AMPV) genomes
-              as first and co-corresponding author, and co-authored studies on PRRSV-2 diversity.
+              In recent computational genomics research, I translated these capabilities into high-throughput pathogen surveillance
+              and outbreak analytics. To track rapidly evolving viruses during outbreaks, I led computational genomics for targeted
+              amplicon sequencing studies of emerging avian metapneumovirus (AMPV) genomes as first and co-corresponding author,
+              and co-authored studies on viral genomic diversity.
             </p>
             <div className="border-l-2 border-sky-500 pl-4 py-2 bg-sky-50/70 rounded-r-lg text-slate-800 text-xs md:text-sm font-medium">
               "My research program develops computational methods to understand how genomic variation and host regulatory
@@ -302,10 +323,10 @@ export default function HomePage() {
             </div>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono font-bold">
               <Link href="/research-grants/" className="text-sky-700 hover:text-sky-900 underline underline-offset-4">
-                View Awarded Grants ($1.95M) &rarr;
+                View Awarded Grants ($2.27M) &rarr;
               </Link>
               <Link href="/software-tools/" className="text-teal-700 hover:text-teal-900 underline underline-offset-4">
-                Explore Software &amp; 19 Web Servers &rarr;
+                Explore Software &amp; 13 Web Resources &rarr;
               </Link>
             </div>
           </div>

@@ -23,14 +23,14 @@
   },
   {
     "key": "duhan2025atsubp",
-    "title": "AtSubP-2.0: An Integrated Web Server for the Annotation of Arabidopsis Proteome Subcellular Localization",
+    "title": "AtSubP-2.0: An integrated web server for the annotation of Arabidopsis proteome subcellular localization using deep learning",
     "authors": "Naveen Duhan, R. Kaundal",
     "journal": "The Plant Genome",
     "year": "2025",
-    "doi": "10.1002/tpg2.20451",
-    "url": "https://doi.org/10.1002/tpg2.20451",
+    "doi": "10.1002/tpg2.20536",
+    "url": "https://doi.org/10.1002/tpg2.20536",
     "category": "ai",
-    "bibtex": "@article{duhan2025atsubp,\n  author = {Duhan, Naveen and Kaundal, R.},\n  title = {AtSubP-2.0: An Integrated Web Server for Annotation of Arabidopsis Proteome},\n  journal = {The Plant Genome},\n  year = {2025}\n}"
+    "bibtex": "@article{duhan2025atsubp,\n  author = {Duhan, Naveen and Kaundal, R.},\n  title = {AtSubP-2.0: An integrated web server for the annotation of Arabidopsis proteome subcellular localization using deep learning},\n  journal = {The Plant Genome},\n  year = {2025},\n  volume = {18},\n  number = {1},\n  pages = {e20536},\n  doi = {10.1002/tpg2.20536}\n}"
   },
   {
     "key": "selim2026isolation",
@@ -78,14 +78,14 @@
   },
   {
     "key": "duhan2024rslpred2",
-    "title": "RSLpred2: An integrated web server for the annotation of Rice proteome subcellular localization using deep learning",
+    "title": "RSLpred2: An Integrated Web Server for the Annotation of Rice Proteome Subcellular Localization Using Deep Learning",
     "authors": "Duhan, N. and Kaundal, R.",
     "journal": "Rice",
-    "year": "2024",
-    "doi": "",
-    "url": "",
+    "year": "2025",
+    "doi": "10.1186/s12284-025-00767-7",
+    "url": "https://doi.org/10.1186/s12284-025-00767-7",
     "category": "ai",
-    "bibtex": "@article{duhan2024rslpred2,\n  author = {Duhan, N. and Kaundal, R.},\n  title = {RSLpred2: An integrated web server for the annotation of Rice proteome subcellular localization using deep learning},\n  journal = {Rice},\n  year = {2024},\n  doi = {}\n}"
+    "bibtex": "@article{duhan2025rslpred2,\n  author = {Duhan, Naveen and Kaundal, R.},\n  title = {RSLpred2: An Integrated Web Server for the Annotation of Rice Proteome Subcellular Localization Using Deep Learning},\n  journal = {Rice},\n  year = {2025},\n  volume = {18},\n  pages = {58},\n  doi = {10.1186/s12284-025-00767-7}\n}"
   },
   {
     "key": "Luqman2024",
@@ -110,15 +110,15 @@
     "bibtex": "@article{kataria2024,\n  author = {Kataria, Raghav and Duhan, N  and Kaundal, Rakesh},\n  title = {Navigating the human-monkeypox virus interactome: HuPoxNET atlas reveals functional insights},\n  journal = {Frontiers in Microbiology},\n  year = {2024},\n  doi = {10.3389/fmicb.2024.1399555}\n}"
   },
   {
-    "key": "atsubp22024",
-    "title": "AtSubP-2.0: An integrated web server for the annotation of Arabidopsis proteome subcellular localization using deep learning",
-    "authors": "Duhan, N. and Kaundal, R.",
-    "journal": "Plant Genome",
-    "year": "2024",
-    "doi": "",
-    "url": "",
+    "key": "duhan2025prgminer",
+    "title": "PRGminer: Harnessing deep learning for the prediction of resistance genes involved in plant defense mechanisms",
+    "authors": "Naveen Duhan, R. Kaundal",
+    "journal": "Frontiers in Plant Science",
+    "year": "2025",
+    "doi": "10.3389/fpls.2025.1411525",
+    "url": "https://doi.org/10.3389/fpls.2025.1411525",
     "category": "ai",
-    "bibtex": "@article{atsubp22024,\n  author = {Duhan, N. and Kaundal, R.},\n  title = {AtSubP-2.0: An integrated web server for the annotation of Arabidopsis proteome subcellular localization using deep learning},\n  journal = {Plant Genome},\n  year = {2024},\n  doi = {}\n}"
+    "bibtex": "@article{duhan2025prgminer,\n  author = {Duhan, Naveen and Kaundal, R.},\n  title = {PRGminer: harnessing deep learning for the prediction of resistance genes involved in plant defense mechanisms},\n  journal = {Frontiers in Plant Science},\n  year = {2025},\n  volume = {16},\n  pages = {1411525},\n  doi = {10.3389/fpls.2025.1411525}\n}"
   },
   {
     "key": "kaur2023transcriptome",
@@ -346,10 +346,10 @@
     "authors": "Duhan, N. and Sarao, N.K. and  Mohanpuria, P. and Sidhu, M.K.",
     "journal": "HortFlora Research Spectrum",
     "year": "2016",
-    "doi": "",
-    "url": "",
+    "doi": "CABDirect:20173074226",
+    "url": "https://www.cabdirect.org/cabdirect/abstract/20173074226",
     "category": "genomics",
-    "bibtex": "@article{naveen2016silico,\n  author = {Duhan, N. and Sarao, N.K. and  Mohanpuria, P. and Sidhu, M.K.},\n  title = {In silico identification and characterization of potential miRNAs from Capsicum annum.},\n  journal = {HortFlora Research Spectrum},\n  year = {2016},\n  doi = {}\n}"
+    "bibtex": "@article{duhan2016capsicum,\n  author = {Duhan, N. and Sarao, N. K. and Mohanpuria, P. and Sidhu, M. K.},\n  title = {In silico identification and characterization of potential miRNAs from Capsicum annum.},\n  journal = {HortFlora Research Spectrum},\n  year = {2016},\n  volume = {5},\n  number = {4},\n  pages = {306--309}\n}"
   },
   {
     "key": "mohanpuria2013computational",
@@ -357,10 +357,10 @@
     "authors": "Mohanpuria, P. and Sarao, N. K. and Duhan, N. and Brar, G. and Kaur, A. and Singh, K.",
     "journal": "Crop Improv",
     "year": "2013",
-    "doi": "",
-    "url": "",
+    "doi": "ResearchGate:272494574",
+    "url": "https://www.researchgate.net/publication/272494574_Computational_identification_and_characterization_of_potential_miRNAs_from_Asiatic_cotton_Gossypium_arboreum_L",
     "category": "genomics",
-    "bibtex": "@article{mohanpuria2013computational,\n  author = {Mohanpuria, P. and Sarao, N. K. and Duhan, N. and Brar, G. and Kaur, A. and Singh, K.},\n  title = {Computational identification and characterization of potential miRNAs from Asiatic cotton (Gossypium arboreum L.)},\n  journal = {Crop Improv},\n  year = {2013},\n  doi = {}\n}"
+    "bibtex": "@article{mohanpuria2013cotton,\n  author = {Mohanpuria, P. and Sarao, N. K. and Duhan, N. and Brar, G. and Kaur, A. and Singh, K.},\n  title = {Computational identification and characterization of potential miRNAs from Asiatic cotton (Gossypium arboreum L.)},\n  journal = {Crop Improvement},\n  year = {2013},\n  volume = {40},\n  number = {2},\n  pages = {121--128}\n}"
   },
   {
     "key": "omer2012identification",

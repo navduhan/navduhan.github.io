@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }) {
           <div>
             <div className="font-display font-bold text-slate-900 text-sm">Dr. Naveen Duhan</div>
             <div className="text-xs text-slate-500 font-mono">
-              ADRDL South Dakota State University &bull; Computational Biologist
+              Computational Biologist &bull; Genomics, ML &amp; Systems Biology
             </div>
           </div>
         </div>
@@ -258,8 +258,8 @@ export default async function BlogPostPage({ params }) {
             />
             <div>
               <h3 className="font-display font-bold text-slate-900 text-lg">Dr. Naveen Duhan</h3>
-              <p className="text-xs text-sky-700 font-semibold">Animal Disease Research &amp; Diagnostic Lab</p>
-              <p className="text-[11px] text-slate-500 font-mono">South Dakota State University</p>
+              <p className="text-xs text-sky-700 font-semibold">Computational Biology &amp; Genomics</p>
+              <p className="text-[11px] text-slate-500 font-mono">naveen.duhan@outlook.com</p>
             </div>
           </div>
 
@@ -271,9 +271,8 @@ export default async function BlogPostPage({ params }) {
         </div>
 
         <p className="text-xs text-slate-600 leading-relaxed border-t border-sky-100 pt-3">
-          I direct computational genomics pipelines for real-time disease outbreaks, develop open-source bioinformatics
-          software, and deploy public web resources accessed by over 24,000 researchers worldwide. Questions or ideas for
-          collaboration? Feel free to reach out.
+          I develop computational genomics pipelines for viral surveillance, open-source bioinformatics
+          software, and public web resources accessed by researchers worldwide.
         </p>
       </div>
     </article>

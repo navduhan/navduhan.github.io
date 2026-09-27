@@ -35,18 +35,34 @@ export default function ContactPage() {
 
             <div className="text-sm text-slate-600 space-y-1.5">
               <p className="font-bold text-slate-900 text-base">{profile.name}, {profile.degree}</p>
-              <p>{profile.title}</p>
+              <p className="text-sky-800 font-semibold">{profile.title}</p>
+              <p className="text-slate-800 font-medium">{profile.department}</p>
               <p>{profile.institution}</p>
-              <p>{profile.department}</p>
               <p>{profile.university}</p>
-              <p>{profile.location}</p>
+              <div className="pt-2 text-xs text-slate-500 font-mono space-y-0.5">
+                <p><span className="font-semibold text-slate-700">Office:</span> {profile.office}</p>
+                <p><span className="font-semibold text-slate-700">Mailing:</span> {profile.mailingAddress}</p>
+                <p>{profile.location}</p>
+              </div>
             </div>
 
             <div className="pt-4 border-t border-sky-100 space-y-2.5 text-xs font-mono">
+              <div className="flex items-center gap-2 text-slate-700">
+                <span className="font-bold text-sky-800">Phone:</span>
+                <a href={`tel:${profile.phone.replace(/[^0-9]/g, "")}`} className="hover:underline font-semibold text-slate-900">
+                  {profile.phone}
+                </a>
+              </div>
               <div className="flex items-center gap-2 text-sky-800">
                 <span className="font-bold">Email:</span>
                 <a href={`mailto:${profile.email}`} className="hover:underline font-semibold">
                   {profile.email}
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-slate-600">
+                <span className="font-bold">Alt Email:</span>
+                <a href={`mailto:${profile.personalEmail}`} className="hover:underline">
+                  {profile.personalEmail}
                 </a>
               </div>
               <div className="flex items-center gap-2 text-slate-600">
@@ -61,12 +77,26 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="flex items-center gap-2 text-slate-600">
-                <span className="font-bold">ORCID:</span>
-                <span className="text-slate-700">{profile.orcid}</span>
+                <span className="font-bold">LinkedIn:</span>
+                <a
+                  href={profile.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-700 hover:underline"
+                >
+                  in/navduhan
+                </a>
               </div>
               <div className="flex items-center gap-2 text-slate-600">
-                <span className="font-bold">Education:</span>
-                <span className="text-slate-700">Ph.D. Dec 2024 &bull; Utah State University</span>
+                <span className="font-bold">ORCID:</span>
+                <a
+                  href={`https://orcid.org/${profile.orcid}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 hover:underline"
+                >
+                  {profile.orcid}
+                </a>
               </div>
             </div>
           </div>
@@ -74,7 +104,7 @@ export default function ContactPage() {
           <div className="p-7 rounded-2xl bg-gradient-to-br from-sky-700 via-sky-800 to-cyan-800 text-white space-y-3.5 shadow-xl">
             <h4 className="font-display font-bold text-xl">Official Curriculum Vitae</h4>
             <p className="text-xs text-sky-100 leading-relaxed">
-              Complete document containing the full 34 peer-reviewed publications, $1.95M grant portfolio, 9 software packages, and 19 deployed web servers.
+              Complete document containing the full 34 peer-reviewed publications, $2.27M active grant portfolio ($1.97M USDA-APHIS Co-PI), software packages, and deployed web resources.
             </p>
             <a
               href="/Naveen_Duhan_CV.pdf"
@@ -94,17 +124,18 @@ export default function ContactPage() {
         <div className="lg:col-span-7 space-y-6">
           <div className="card-colorful p-8 space-y-5">
             <h3 className="font-display font-bold text-slate-900 text-xl">
-              Mentoring &amp; Instructional Philosophy
+              Research Collaboration &amp; Mentoring
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              At Punjab Agricultural University, I served as sole instructor for undergraduate and graduate courses
-              in bioinformatics, genomics, and computational biology. I also taught Bioinformatics and Big Data
-              Mining at Utah State University and have delivered invited workshops on Linux and NGS data analysis.
+              At South Dakota State University's Animal Disease Research and Diagnostic Laboratory (ADRDL),
+              I lead computational genomics research on avian viral pathogens, design analytical pipelines,
+              and mentor graduate students in bioinformatics methods and translational project design.
             </p>
             <p className="text-sm text-slate-600 leading-relaxed">
-              My mentoring approach emphasizes scientific ownership: postbaccalaureate researchers build confidence
-              through data curation and reproducible replication, while graduate students and postdocs lead studies,
-              shape computational methods, publish findings, and develop independent research directions.
+              My instructional and mentoring background includes teaching Bioinformatics and Big Data Mining
+              (PSC 4150/6150) at Utah State University, delivering practical workshops on NGS Data Analysis,
+              Linux for Biologists, and Machine Learning, assisting in graduate and undergraduate computational
+              courses at Punjab Agricultural University, and lecturing in bioinformatics at Guru Nanak Girls College.
             </p>
 
             <div className="pt-4 border-t border-sky-100 space-y-4">
