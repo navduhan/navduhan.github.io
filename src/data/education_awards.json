@@ -44,31 +44,13 @@
   ],
   "awards": [
     {
-      "title": "USU Robins Award Finalist — Doctoral Student Researcher of the Year",
-      "institution": "Utah State University",
-      "year": "2022 – 2023",
-      "level": "University-Wide Honor",
-      "description": "Selected as one of the top doctoral student researchers across all colleges and departments at Utah State University in the prestigious university-wide Robins Awards.",
-      "category": "Doctoral Research Excellence",
-      "highlight": true
-    },
-    {
       "title": "Doctoral Student Researcher of the Year",
       "institution": "College of Agriculture and Applied Sciences (CAAS), Utah State University",
       "year": "2022 – 2023",
       "level": "College-Wide Honor",
-      "description": "Awarded by CAAS for pioneering research in machine learning architectures for high-throughput genomics, deep learning enzyme prediction, and viral interactomics.",
+      "description": "Awarded by the College of Agriculture and Applied Sciences for pioneering computational research in high-throughput genomics, deep learning enzyme prediction, and viral interactomics.",
       "category": "College Research Award",
       "highlight": true
-    },
-    {
-      "title": "Doctoral Student Researcher of the Year",
-      "institution": "Department of Plants, Soils and Climate, Utah State University",
-      "year": "2022 – 2023",
-      "level": "Departmental Honor",
-      "description": "Honored for outstanding productivity, first-author computational publications, and high-impact web server development.",
-      "category": "Departmental Research Award",
-      "highlight": false
     },
     {
       "title": "Young Scientist Award",
@@ -77,7 +59,7 @@
       "level": "National Conference Honor",
       "description": "Conferred at ICAR-Indian Institute of Rice Research (IIRR), Hyderabad, India, in recognition of significant contributions to crop bioinformatics and molecular marker discovery.",
       "category": "Early Career Honor",
-      "highlight": false
+      "highlight": true
     }
   ],
   "media": [
