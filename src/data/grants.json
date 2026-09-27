@@ -1,0 +1,54 @@
+[
+  {
+    "id": "usda-aphis-hpai",
+    "title": "Poultry HPAI Interactome: Integrated Computational & Diagnostic Surveillance of Avian Influenza Host-Pathogen Protein Interactions",
+    "agency": "USDA-APHIS",
+    "role": "Co-PI (SDSU Lead)",
+    "period": "2026 – 2029",
+    "status": "Active",
+    "amount": "$1,298,992",
+    "subaward": "$250,000 SDSU Subaward",
+    "highlight": true,
+    "description": "High-throughput multi-omics sequencing and structural interactome modeling of Highly Pathogenic Avian Influenza (HPAI H5N1). Modeling inter-species transmission barriers, reassortment dynamics, and host response across avian and mammalian hosts using containerized Nextflow pipelines.",
+    "tags": ["USDA-APHIS", "Nextflow DSL2", "Host-Pathogen Interactome", "H5N1 HPAI", "Structural Genomics"]
+  },
+  {
+    "id": "usda-nifa-ampv",
+    "title": "Integrated Genomic Surveillance of Emerging Avian Metapneumovirus Subtypes A and B in US Poultry Flocks",
+    "agency": "USDA-NIFA",
+    "role": "Co-Investigator (Co-I)",
+    "period": "August 2026 – July 2028",
+    "status": "Awarded",
+    "amount": "$500,000",
+    "subaward": null,
+    "highlight": false,
+    "description": "Targeted amplicon sequencing and phylogenetic tracking of emerging aMPV subtypes. Resolving lineage shifts, transmission networks, and evolutionary divergence in US poultry flocks to support rapid diagnostic intervention.",
+    "tags": ["USDA-NIFA", "Targeted Sequencing", "Phylogenetics", "aMPV Subtypes", "Molecular Epidemiology"]
+  },
+  {
+    "id": "ffar-roar-vaccine",
+    "title": "Rapid Outbreak Response: Broad-Spectrum Vaccine and Diagnostics for Avian Metapneumovirus",
+    "agency": "Foundation for Food & Agriculture Research (FFAR) ROAR",
+    "role": "Co-Investigator (Co-I)",
+    "period": "September 2025 – August 2026",
+    "status": "Active",
+    "amount": "$150,000",
+    "subaward": null,
+    "highlight": false,
+    "description": "Rapid development and validation of diagnostic assays and vaccine candidate evaluations to combat immediate respiratory viral outbreaks in commercial agricultural flocks.",
+    "tags": ["FFAR ROAR", "Rapid Diagnostics", "Vaccine Genomics", "Biosecurity"]
+  },
+  {
+    "id": "ffar-diagnostic-control",
+    "title": "Avian Metapneumovirus Diagnostic-Assay Development and Outbreak Control",
+    "agency": "Foundation for Food & Agriculture Research (FFAR)",
+    "role": "Co-Investigator (Co-I)",
+    "period": "2024 – 2025",
+    "status": "Completed",
+    "amount": "$150,000",
+    "subaward": null,
+    "highlight": false,
+    "description": "Designed high-sensitivity molecular assays and computational typing workflows for field pathogen identification and outbreak mitigation.",
+    "tags": ["FFAR", "Assay Development", "Viral Typing", "Diagnostics"]
+  }
+]

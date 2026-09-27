@@ -1,160 +1,244 @@
 {
-  "software": [
-    {
-      "name": "miPyRNA",
-      "description": "An automated Python package for small RNA sequencing data analysis.",
-      "link": "https://github.com/navduhan/mipyrna",
-      "category": "RNA Analysis",
-      "features": ["Small RNA Analysis", "Automated Pipeline", "Statistical Analysis"],
-      "type": "github"
-    },
-    {
-      "name": "SNVguru",
-      "description": "An automated Python package for single nucleotide variation (SNV) analysis.",
-      "link": "https://github.com/usubioinfo/snvguru",
-      "category": "Variant Analysis",
-      "features": ["SNV Detection", "Variant Calling", "Annotation"],
-      "type": "github"
-    },
-    {
-      "name": "pySeqRNA",
-      "description": "An automated Python package for next-generation sequencing data analysis.",
-      "link": "https://github.com/navduhan/pyseqrna",
-      "category": "NGS Analysis",
-      "features": ["NGS Pipeline", "Quality Control", "Differential Expression"],
-      "type": "github"
-    },
+  "packages": [
     {
       "name": "MetaNextViro",
-      "description": "GitHub repository for MetaNextViro.",
-      "link": "https://github.com/navduhan/metanextviro",
-      "category": "Metagenomics",
-      "features": ["Viral Analysis", "Workflow", "Research Tooling"],
-      "type": "github"
+      "version": "v1.2.0",
+      "type": "Workflow Pipeline",
+      "stack": "Nextflow DSL2 • Docker • Singularity • Slurm",
+      "summary": "Modular Nextflow pipeline for virus identification and metagenomic analysis, including de novo assembly, taxonomic classification, viral genome quality assessment, coverage analysis, and interactive reporting across local, containerized, and HPC environments.",
+      "github": "https://github.com/navduhan/metanextviro",
+      "doi": "10.5281/zenodo.metanextviro"
     },
     {
-      "name": "TagSeq",
-      "description": "GitHub repository for TagSeq.",
-      "link": "https://github.com/navduhan/tagseq",
-      "category": "Transcriptomics",
-      "features": ["Tag-based RNA", "Analysis Pipeline", "Research Tooling"],
-      "type": "github"
-    },
-    {
-      "name": "MINpred",
-      "description": "A standalone alignment-free deep learning based tool for nitrogen mineralization enzyme classification.",
-      "link": "https://bioinfo.usu.edu/minpred/download/minpred.tar.gz",
-      "category": "Deep Learning",
-      "features": ["Enzyme Classification", "Deep Learning Model", "Alignment-free"],
-      "type": "download"
-    },
-    {
-      "name": "deepNEC",
-      "description": "A standalone alignment-free deep learning based tool for nitrogen metabolism enzyme classification.",
-      "link": "https://navduhan@bitbucket.org/navduhan/deepnec.git",
-      "category": "Deep Learning",
-      "features": ["Metabolism Analysis", "Deep Learning Model", "Alignment-free"],
-      "type": "bitbucket"
-    }
-  ],
-  "webResources": [
-    {
-      "name": "HPInet",
-      "description": "A cereal crops and pathogen protein-protein interaction database.",
-      "link": "http://bioinfo.usu.edu/hpinet/",
-      "type": "database",
-      "tags": ["host-pathogen", "protein-interaction", "cereal-crops"]
-    },
-    {
-      "name": "HuPoxNET",
-      "description": "A database for human-monkeypox virus interactome.",
-      "link": "http://bioinfo.usu.edu/hupoxnet/",
-      "type": "database",
-      "tags": ["host-pathogen", "virus", "interactome"]
-    },
-    {
-      "name": "myDockDB",
-      "description": "A multiple myeloma proteins and natural compounds docking web resource.",
-      "link": "http://bioinfo.usu.edu/myDockDB/",
-      "type": "database",
-      "tags": ["docking", "multiple-myeloma", "natural-compounds"]
-    },
-    {
-      "name": "pySeqRNA",
-      "description": "Complete documentation website for pySeqRNA package.",
-      "link": "http://bioinfo.usu.edu/pyseqrna/",
-      "type": "webserver",
-      "tags": ["RNA-seq", "documentation", "genomics"]
-    },
-    {
-      "name": "ranchSATdb",
-      "description": "A database of ranch animals microsatellite markers.",
-      "link": "http://bioinfo.usu.edu/ranchSATdb/",
-      "type": "database",
-      "tags": ["microsatellite", "ranch-animals", "genomics"]
-    },
-    {
-      "name": "TritiKBdb",
-      "description": "A host-pathogen interaction database for understanding Karnal Bunt disease infection mechanisms in wheat.",
-      "link": "http://bioinfo.usu.edu/tritikbdb/",
-      "type": "database",
-      "tags": ["host-pathogen", "wheat", "disease"]
-    },
-    {
-      "name": "HuCoPIA",
-      "description": "An atlas of human vs. SARS-CoV-2 interactome and comparative analysis with other Coronaviridae family viruses.",
-      "link": "http://bioinfo.usu.edu/hucopia/",
-      "type": "database",
-      "tags": ["host-pathogen", "COVID-19", "interactome"]
-    },
-    {
-      "name": "deepNEC",
-      "description": "An integrated web server platform for the prediction of nitrogen metabolism-related enzymes using deep learning.",
-      "link": "http://bioinfo.usu.edu/deepNEC/",
-      "type": "webserver",
-      "tags": ["deep-learning", "enzymes", "metabolism"]
-    },
-    {
-      "name": "deepHPI",
-      "description": "A deep learning framework for the prediction of host-pathogen protein interactions and visualization.",
-      "link": "http://bioinfo.usu.edu/deepHPI/",
-      "type": "webserver",
-      "tags": ["deep-learning", "host-pathogen", "protein-interaction"]
-    },
-    {
-      "name": "GreeningDB",
-      "description": "A database of host-pathogen interactions and comparative omics of citrus and citrus greening disease (HLB).",
-      "link": "http://bioinfo.usu.edu/GreeningDB/",
-      "type": "database",
-      "tags": ["host-pathogen", "citrus", "disease"]
-    },
-    {
-      "name": "covidTracker",
-      "description": "A COVID-19 disease infection statistics tracker.",
-      "link": "http://bioinfo.usu.edu/covidTracker/",
-      "type": "webserver",
-      "tags": ["COVID-19", "disease-tracking", "statistics"]
-    },
-    {
-      "name": "legumeSSRdb",
-      "description": "A legume species microsatellite markers database.",
-      "link": "http://bioinfo.usu.edu/legumeSSRdb/",
-      "type": "database",
-      "tags": ["microsatellite", "legume", "genomics"]
-    },
-    {
-      "name": "citSATdb",
-      "description": "A citrus species microsatellite markers database.",
-      "link": "http://bioinfo.usu.edu/citSATdb/",
-      "type": "database",
-      "tags": ["microsatellite", "citrus", "genomics"]
+      "name": "PyVirSeq",
+      "version": "v0.9.4",
+      "type": "Python Package & CLI",
+      "stack": "Python 3.10+ • Biopython • Click • PyPI • Slurm",
+      "summary": "Production CLI parser for viral read classification, reference-guided consensus generation, amplicon sequencing, genome reconstruction, and open-ended virome discovery with local and SLURM execution support.",
+      "github": "https://github.com/navduhan/pyvirseq",
+      "doi": "10.3389/fcimb.2026.1882507"
     },
     {
       "name": "PRGminer",
-      "description": "Deep learning based PR-genes prediction.",
-      "link": "http://bioinfo.usu.edu/prgminer/",
-      "type": "webserver",
-      "tags": ["plant resistance gene", "R-gene", "genomics"]
+      "version": "v1.0.0",
+      "type": "Genomics Classifier",
+      "stack": "Python • Deep Neural Networks • HMMER",
+      "summary": "Deep learning package for predicting and classifying plant resistance genes into eight functional categories; also deployed as an interactive web server at kaabil.net/prgminer.",
+      "github": "https://github.com/navduhan/PRGminer",
+      "doi": "10.1016/j.cpb.2020.100171"
+    },
+    {
+      "name": "CodonAdaptPy",
+      "version": "v0.8.2",
+      "type": "Sequence Analysis",
+      "stack": "Python • NumPy • SciPy",
+      "summary": "Python package for coding-sequence validation, codon-usage and host-adaptation analysis, molecular-evolution diagnostics, phylogenetics, and constrained codon optimization.",
+      "github": "https://github.com/navduhan/CodonAdaptPy",
+      "doi": "10.5281/zenodo.codonadapt"
+    },
+    {
+      "name": "miPyRNA",
+      "version": "v1.0.2",
+      "type": "Small RNA Suite",
+      "stack": "Python • Bowtie • ViennaRNA",
+      "summary": "Automated python package for small RNA sequencing data analysis, novel microRNA discovery, and target site prediction. Adopted by 100+ research groups worldwide.",
+      "github": "https://github.com/navduhan/mipyrna",
+      "doi": "10.1016/j.compbiomed.2022.105432"
+    },
+    {
+      "name": "SNVguru",
+      "version": "v1.1.0",
+      "type": "Genomics Tool",
+      "stack": "Python • Pandas • Cython",
+      "summary": "Automated python package for single nucleotide variation (SNV) interpretation, analyzing codon bias, secondary structure effects, and splice alterations. Adopted by 50+ research groups.",
+      "github": "https://github.com/usubioinfo/snvguru",
+      "doi": "10.1186/s12859-021-04288-w"
+    },
+    {
+      "name": "pySeqRNA",
+      "version": "v1.0.8",
+      "type": "Transcriptomics Tool",
+      "stack": "Python • STAR • DESeq2 • Matplotlib",
+      "summary": "Complete automated package for next-generation RNA sequencing data analysis from quality control to differential gene expression. Complete documentation website with 500+ users.",
+      "github": "https://github.com/navduhan/pyseqrna",
+      "doi": "10.1016/j.csbj.2021.08.012"
+    },
+    {
+      "name": "MINpred v1.0.0",
+      "version": "v1.0.0",
+      "type": "Deep Learning / Zenodo",
+      "stack": "Python • TensorFlow Lite • Zenodo DOI",
+      "summary": "Alignment-free, four-phase deep learning package for ten-class nitrogen mineralization enzyme and EC prediction, using checksum-verified TFLite models archived on Zenodo.",
+      "github": "https://github.com/usubioinfo/minpred",
+      "doi": "10.5281/zenodo.21897103"
+    },
+    {
+      "name": "deepNEC 2.0",
+      "version": "v2.0.2",
+      "type": "Protein Language Model",
+      "stack": "Python • PyTorch • ReadTheDocs",
+      "summary": "Alignment-free protein language model for hierarchical enzyme and EC classification across ten nitrogen-metabolism pathways and 24 terminal outputs. Published in Briefings in Bioinformatics.",
+      "github": "https://github.com/usubioinfo/deepnec-2.0",
+      "doi": "10.1093/bib/bbac071"
     }
-  ]
+  ],
+  "webServers": [
+    {
+      "id": "deepHPI",
+      "name": "deepHPI",
+      "url": "http://bioinfo.usu.edu/deepHPI/",
+      "users": "3,400+",
+      "category": "Interactomes",
+      "summary": "Deep learning framework for predicting host-pathogen protein interactions with the interactive Deepteractomer visualization interface."
+    },
+    {
+      "id": "covidTracker",
+      "name": "covidTracker",
+      "url": "http://bioinfo.usu.edu/covidTracker/",
+      "users": "8,200+",
+      "category": "Surveillance",
+      "summary": "Real-time infection statistics tracker and evolutionary tracking portal for COVID-19 pandemic epidemiology."
+    },
+    {
+      "id": "GreeningDB",
+      "name": "GreeningDB",
+      "url": "http://bioinfo.usu.edu/GreeningDB/",
+      "users": "3,100+",
+      "category": "Interactomes",
+      "summary": "Interactive database of host-pathogen interactions and comparative omics of citrus and citrus greening disease (Huanglongbing)."
+    },
+    {
+      "id": "TritiKBdb",
+      "name": "TritiKBdb",
+      "url": "http://bioinfo.usu.edu/tritikbdb/",
+      "users": "2,200+",
+      "category": "Interactomes",
+      "summary": "Host-pathogen interaction database for understanding Karnal Bunt disease infection and defense mechanisms in wheat."
+    },
+    {
+      "id": "legumeSSRdb",
+      "name": "legumeSSRdb",
+      "url": "http://bioinfo.usu.edu/legumeSSRdb/",
+      "users": "2,000+",
+      "category": "Genomics & Markers",
+      "summary": "Comprehensive microsatellite marker database and comparative genomic resource across major legume species."
+    },
+    {
+      "id": "deepNEC-web",
+      "name": "deepNEC Web Server",
+      "url": "https://bioinfo.usu.edu/deepNEC/",
+      "users": "1,900+",
+      "category": "AI Models",
+      "summary": "Alignment-free web platform for identifying and classifying nitrogen mineralization-related enzymes from sequence alone."
+    },
+    {
+      "id": "AtSubP2",
+      "name": "AtSubP-2.0",
+      "url": "https://kaabil.net/AtSubP2/",
+      "users": "1,000+",
+      "category": "AI Models",
+      "summary": "Deep learning platform for predicting single, dual, and membrane-protein subcellular localization across the Arabidopsis proteome."
+    },
+    {
+      "id": "ranchSATdb",
+      "name": "ranchSATdb",
+      "url": "http://bioinfo.usu.edu/ranchSATdb/",
+      "users": "990+",
+      "category": "Genomics & Markers",
+      "summary": "Curated database of microsatellite markers and genomic variation across ranch animals and livestock breeds."
+    },
+    {
+      "id": "citSATdb",
+      "name": "citSATdb",
+      "url": "http://bioinfo.usu.edu/citSATdb/",
+      "users": "530+",
+      "category": "Genomics & Markers",
+      "summary": "Citrus species microsatellite marker repository and functional annotation database."
+    },
+    {
+      "id": "RSLpred2",
+      "name": "RSLpred2",
+      "url": "https://kaabil.net/RSLpred2/",
+      "users": "360+",
+      "category": "AI Models",
+      "summary": "Web server for predicting and annotating protein subcellular localization across the rice proteome."
+    },
+    {
+      "id": "HuCoPIA",
+      "name": "HuCoPIA",
+      "url": "http://bioinfo.usu.edu/hucopia/",
+      "users": "260+",
+      "category": "Interactomes",
+      "summary": "Atlas of Human vs. SARS-CoV-2 interactome and comparative interactomic analysis with other Coronaviridae family viruses."
+    },
+    {
+      "id": "deepNEC-2",
+      "name": "deepNEC-2.0 Web Server",
+      "url": "https://kaabil.net/deepnec-2.0",
+      "users": "110+",
+      "category": "AI Models",
+      "summary": "Multistage web server for functional classification of nitrogen mineralization enzymes using protein language embeddings."
+    },
+    {
+      "id": "LegumeLoc",
+      "name": "LegumeLoc",
+      "url": "https://kaabil.net/legumeloc/",
+      "users": "100+",
+      "category": "AI Models",
+      "summary": "Deep learning web server for predicting single and dual subcellular localization of legume crop proteins."
+    },
+    {
+      "id": "PRGminer-web",
+      "name": "PRGminer Web Server",
+      "url": "https://kaabil.net/prgminer",
+      "users": "95+",
+      "category": "AI Models",
+      "summary": "Interactive web interface for predicting and classifying plant disease resistance genes into 8 structural classes."
+    },
+    {
+      "id": "HuPoxNET",
+      "name": "HuPoxNET",
+      "url": "http://bioinfo.usu.edu/hupoxnet/",
+      "users": "70+",
+      "category": "Interactomes",
+      "summary": "Host-pathogen protein-protein interaction database for Human-Monkeypox virus (Mpox, Variola) pathogenesis."
+    },
+    {
+      "id": "APinet",
+      "name": "APinet",
+      "url": "https://kaabil.net/apinet/",
+      "users": "30+",
+      "category": "Interactomes",
+      "summary": "Interactive portal for predicting and visualizing protein-protein interactions in the Arabidopsis-Pseudomonas host-pathogen system."
+    },
+    {
+      "id": "MINpred-web",
+      "name": "MINpred Web Server",
+      "url": "https://kaabil.net/minpred",
+      "users": "25+",
+      "category": "AI Models",
+      "summary": "Online deep neural network server for multi-class nitrogen mineralization enzyme prediction."
+    },
+    {
+      "id": "HPInet",
+      "name": "HPInet",
+      "url": "http://bioinfo.usu.edu/hpinet/",
+      "users": "20+",
+      "category": "Interactomes",
+      "summary": "Cereal crops and fungal pathogen protein-protein interaction database and network visualization platform."
+    },
+    {
+      "id": "myDockDB",
+      "name": "myDockDB",
+      "url": "https://kaabil.net/myDockDB/",
+      "users": "20+",
+      "category": "Interactomes",
+      "summary": "Cancer-focused molecular docking database prioritizing natural compounds against multiple myeloma therapeutic protein targets."
+    }
+  ],
+  "stats": {
+    "totalWebServers": 19,
+    "globalResearchers": "24,000+",
+    "countriesRepresented": "140+"
+  }
 }
