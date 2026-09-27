@@ -1,6 +1,8 @@
 import Link from "next/link";
 import profile from "@/data/profile.json";
 import grants from "@/data/grants.json";
+import articles from "@/data/blog.json";
+import teaching from "@/data/teaching.json";
 
 export default function HomePage() {
   const featuredGrant = grants.find((g) => g.highlight) || grants[0];
@@ -305,6 +307,176 @@ export default function HomePage() {
                 Explore Software &amp; 19 Web Servers &rarr;
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* BIOINFORMATICS TECHNICAL GUIDES & METHODOLOGICAL INSIGHTS */}
+      <section className="space-y-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-sky-100 pb-3 gap-2">
+          <div>
+            <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
+              <span className="w-2.5 h-1 rounded bg-[#ff671f]" />
+              Bioinformatics Technical Guides &bull; Hands-on Protocols
+            </div>
+            <h2 className="text-2xl font-display font-bold text-slate-900 mt-1">
+              Methodological Deep Dives &amp; Computational Insights
+            </h2>
+          </div>
+          <Link
+            href="/blog/"
+            className="text-xs font-mono font-bold text-[#e65100] hover:text-[#b23b00] flex items-center gap-1 hover:underline"
+          >
+            <span>Browse All {articles.length} Technical Guides</span> &rarr;
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {articles.slice(0, 3).map((article) => (
+            <div
+              key={article.slug}
+              className="card-colorful p-6 flex flex-col justify-between space-y-4 hover:border-sky-300 transition group"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between text-xs font-mono">
+                  <span className="px-2.5 py-0.5 rounded-md bg-sky-50 text-sky-800 font-bold border border-sky-100">
+                    {article.category}
+                  </span>
+                  <span className="text-slate-400 font-medium">{article.readTime}</span>
+                </div>
+                <h3 className="font-display font-bold text-slate-900 text-base leading-snug group-hover:text-sky-700 transition">
+                  <Link href={`/blog/${article.slug}/`} className="text-decoration-none text-current">
+                    {article.title}
+                  </Link>
+                </h3>
+                <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                  {article.summary}
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-100 flex items-center justify-between">
+                <div className="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-500">
+                  {article.tags.slice(0, 2).map((t) => (
+                    <span key={t} className="bg-slate-50 px-2 py-0.5 rounded border border-slate-200/60">
+                      #{t}
+                    </span>
+                  ))}
+                </div>
+                <Link
+                  href={`/blog/${article.slug}/`}
+                  className="text-xs font-mono font-bold text-sky-700 hover:text-sky-900 flex items-center gap-1 group-hover:translate-x-0.5 transition"
+                >
+                  <span>Read</span> &rarr;
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* TEACHING, COURSEWORK & COMPUTATIONAL MENTORING */}
+      <section className="space-y-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-sky-100 pb-3 gap-2">
+          <div>
+            <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
+              <span className="w-2.5 h-1 rounded bg-[#138808]" />
+              Pedagogy &amp; Education &bull; 7 Formal University Curricula
+            </div>
+            <h2 className="text-2xl font-display font-bold text-slate-900 mt-1">
+              Teaching, Coursework &amp; Computational Mentoring
+            </h2>
+          </div>
+          <Link
+            href="/teaching/"
+            className="text-xs font-mono font-bold text-[#138808] hover:text-[#0d6006] flex items-center gap-1 hover:underline"
+          >
+            <span>Explore Full Teaching Dossier</span> &rarr;
+          </Link>
+        </div>
+
+        <div className="grid lg:grid-cols-12 gap-6 items-stretch">
+          {/* Core Courses Card */}
+          <div className="lg:col-span-8 card-colorful p-7 space-y-5">
+            <div className="flex items-center justify-between">
+              <span className="font-display font-bold text-slate-900 text-base">
+                Featured University Curricula
+              </span>
+              <span className="text-xs font-mono text-slate-400">USU &bull; PAU</span>
+            </div>
+
+            <div className="space-y-4">
+              {teaching.courses.slice(0, 3).map((course, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-xl bg-gradient-to-r from-sky-50/60 to-white border border-sky-100/90 space-y-1.5"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <span className="px-2 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-mono font-bold">
+                      {course.code}
+                    </span>
+                    <span className="text-xs font-mono text-slate-500">
+                      {course.institution} &bull; {course.term}
+                    </span>
+                  </div>
+                  <h4 className="font-display font-bold text-slate-900 text-sm">
+                    {course.title}
+                  </h4>
+                  <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                    {course.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-2 flex justify-end">
+              <Link
+                href="/teaching/"
+                className="text-xs font-mono font-bold text-sky-700 hover:text-sky-900 flex items-center gap-1 hover:underline"
+              >
+                <span>View all 7 courses, workshops, and syllabi</span> &rarr;
+              </Link>
+            </div>
+          </div>
+
+          {/* Mentoring & Philosophy Card */}
+          <div className="lg:col-span-4 card-colorful p-7 flex flex-col justify-between space-y-5 bg-gradient-to-br from-white via-emerald-50/30 to-sky-50/40 border-2 border-emerald-100">
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100/70 text-[#138808] text-xs font-mono font-bold">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#138808]" />
+                Pedagogical Philosophy
+              </div>
+              <h3 className="font-display font-bold text-slate-900 text-base leading-snug">
+                Terminal-First Learning &amp; Rigorous Trainee Ownership
+              </h3>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                {teaching.philosophy.summary}
+              </p>
+
+              <div className="space-y-2 pt-2 border-t border-emerald-100/80 font-mono text-xs">
+                <div className="flex justify-between items-center py-1 border-b border-slate-100">
+                  <span className="text-slate-500">Direct Trainees Mentored</span>
+                  <span className="font-bold text-slate-900">18+ Scholars</span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-slate-100">
+                  <span className="text-slate-500">Formal Curricula</span>
+                  <span className="font-bold text-slate-900">7 University Courses</span>
+                </div>
+                <div className="flex justify-between items-center py-1">
+                  <span className="text-slate-500">Hands-on Workshops</span>
+                  <span className="font-bold text-[#138808]">Linux &bull; NGS &bull; ML</span>
+                </div>
+              </div>
+            </div>
+
+            <Link
+              href="/teaching/"
+              className="w-full py-2.5 rounded-xl bg-white hover:bg-emerald-50 text-[#138808] border border-emerald-300 font-semibold text-xs transition flex items-center justify-center gap-1.5 shadow-xs text-decoration-none mt-4"
+            >
+              <span>Explore Teaching Dossier</span>
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

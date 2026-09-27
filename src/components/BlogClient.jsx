@@ -9,10 +9,10 @@ export default function BlogClient({ articles }) {
 
   const categories = [
     { id: "all", label: `All (${articles.length})` },
-    { id: "Viral Genomics", label: "Viral Genomics" },
-    { id: "Pipelines & HPC", label: "Pipelines & HPC" },
-    { id: "Machine Learning & AI", label: "Machine Learning & AI" },
-    { id: "Transcriptomics", label: "Transcriptomics" },
+    { id: "Viral Genomics", label: `Viral Genomics (${articles.filter((a) => a.category === "Viral Genomics").length})` },
+    { id: "Pipelines & HPC", label: `Pipelines & HPC (${articles.filter((a) => a.category === "Pipelines & HPC").length})` },
+    { id: "Machine Learning & AI", label: `Machine Learning & AI (${articles.filter((a) => a.category === "Machine Learning & AI").length})` },
+    { id: "Transcriptomics", label: `Transcriptomics (${articles.filter((a) => a.category === "Transcriptomics").length})` },
   ];
 
   const filtered = articles.filter((a) => {

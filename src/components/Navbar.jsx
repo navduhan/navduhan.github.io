@@ -8,13 +8,12 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // Clean, uncluttered 5-item navigation bar
   const navLinks = [
     { href: "/", label: "About" },
     { href: "/research-grants/", label: "Research & Grants" },
     { href: "/software-tools/", label: "Software & Web Servers" },
     { href: "/publications/", label: "Publications" },
-    { href: "/teaching/", label: "Teaching & Mentoring" },
-    { href: "/blog/", label: "Blog" },
     { href: "/contact/", label: "Contact" },
   ];
 
@@ -44,7 +43,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main Navbar */}
+      {/* Main Clean Navbar */}
       <div className="bg-white/95 backdrop-blur-md border-b border-sky-100/80">
         <div className="max-w-6xl mx-auto px-6 h-18 flex items-center justify-between">
           
@@ -65,8 +64,8 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Simple Clean Text Links (Desktop) */}
-          <nav className="hidden xl:flex items-center gap-6">
+          {/* Simple Clean Desktop Links (Spacious, Uncluttered) */}
+          <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
               const isActive =
                 pathname === link.href ||
@@ -83,42 +82,21 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Semi-large Screen Nav Links (1024px - 1280px) */}
-          <nav className="hidden md:flex xl:hidden items-center gap-4 text-xs font-semibold">
-            {navLinks.slice(0, 5).map((link) => {
-              const isActive =
-                pathname === link.href ||
-                (link.href !== "/" && pathname?.startsWith(link.href.replace(/\/$/, "")));
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`text-slate-600 hover:text-sky-700 transition ${isActive ? "text-sky-700 font-bold" : ""}`}
-                >
-                  {link.label.split(" ")[0]}
-                </Link>
-              );
-            })}
-            <Link href="/blog/" className={`text-slate-600 hover:text-sky-700 transition ${pathname?.startsWith("/blog") ? "text-sky-700 font-bold" : ""}`}>
-              Blog
-            </Link>
-          </nav>
-
           {/* Action Button & Mobile Hamburger */}
           <div className="flex items-center gap-3">
             <a
               href="/Naveen_Duhan_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gradient text-xs sm:text-sm py-2 px-3 sm:px-4 text-decoration-none"
+              className="btn-gradient text-sm py-2 px-4 text-decoration-none"
             >
               <span>CV [PDF]</span>
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
 
-            {/* Mobile Hamburger Button */}
+            {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 rounded-lg bg-sky-50 text-slate-700 hover:bg-sky-100 transition"
@@ -149,6 +127,10 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="pt-2 border-t border-slate-100 flex gap-4 text-sky-700 font-semibold">
+              <Link href="/teaching/" onClick={() => setMobileOpen(false)}>Teaching</Link>
+              <Link href="/blog/" onClick={() => setMobileOpen(false)}>Blog</Link>
+            </div>
           </div>
         )}
       </div>
