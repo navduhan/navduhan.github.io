@@ -1,0 +1,106 @@
+{
+  "education": [
+    {
+      "degree": "Ph.D. in Plant Sciences",
+      "specialization": "Bioinformatics & Computational Biology",
+      "institution": "Utah State University",
+      "department": "Department of Plants, Soils and Climate",
+      "location": "Logan, UT, USA",
+      "period": "Jan 2019 – Dec 2024",
+      "thesis": "Machine Learning and Data Mining in Complex Genomics Big Data: Developing Efficient Tools to Advance Computational Systems Biology",
+      "advisor": "Dr. Rakesh Kaundal",
+      "badge": "Doctoral Degree"
+    },
+    {
+      "degree": "M.Sc. in Bioinformatics",
+      "specialization": "Computational Genomics & MicroRNA Discovery",
+      "institution": "Punjabi University",
+      "department": "Department of Biotechnology",
+      "location": "Patiala, Punjab, India",
+      "period": "Aug 2008 – Jul 2010",
+      "thesis": "In Silico Prediction of MicroRNA in Catharanthus roseus and Their Role in Metabolomics",
+      "badge": "Master's Degree"
+    },
+    {
+      "degree": "B.Sc. in Biology",
+      "specialization": "Zoology, Botany, and Chemistry",
+      "institution": "University College, Kurukshetra University",
+      "department": "Faculty of Science",
+      "location": "Kurukshetra, Haryana, India",
+      "period": "Jul 2005 – Jun 2008",
+      "thesis": null,
+      "badge": "Bachelor's Degree"
+    },
+    {
+      "degree": "Certificate Diploma in Bioinformatics",
+      "specialization": "Biological Sequence Analysis & Computing",
+      "institution": "Kurukshetra University",
+      "department": "Department of Bioinformatics",
+      "location": "Kurukshetra, Haryana, India",
+      "period": "2007 – 2008",
+      "thesis": null,
+      "badge": "Post-Secondary Diploma"
+    }
+  ],
+  "awards": [
+    {
+      "title": "USU Robins Award Finalist — Doctoral Student Researcher of the Year",
+      "institution": "Utah State University",
+      "year": "2022 – 2023",
+      "level": "University-Wide Honor",
+      "description": "Selected as one of the top doctoral student researchers across all colleges and departments at Utah State University in the prestigious university-wide Robins Awards.",
+      "category": "Doctoral Research Excellence",
+      "highlight": true
+    },
+    {
+      "title": "Doctoral Student Researcher of the Year",
+      "institution": "College of Agriculture and Applied Sciences (CAAS), Utah State University",
+      "year": "2022 – 2023",
+      "level": "College-Wide Honor",
+      "description": "Awarded by CAAS for pioneering research in machine learning architectures for high-throughput genomics, deep learning enzyme prediction, and viral interactomics.",
+      "category": "College Research Award",
+      "highlight": true
+    },
+    {
+      "title": "Doctoral Student Researcher of the Year",
+      "institution": "Department of Plants, Soils and Climate, Utah State University",
+      "year": "2022 – 2023",
+      "level": "Departmental Honor",
+      "description": "Honored for outstanding productivity, first-author computational publications, and high-impact web server development.",
+      "category": "Departmental Research Award",
+      "highlight": false
+    },
+    {
+      "title": "Young Scientist Award",
+      "institution": "National Conference on Technological Challenges (TECHSEAR-2017)",
+      "year": "2017",
+      "level": "National Conference Honor",
+      "description": "Conferred at ICAR-Indian Institute of Rice Research (IIRR), Hyderabad, India, in recognition of significant contributions to crop bioinformatics and molecular marker discovery.",
+      "category": "Early Career Honor",
+      "highlight": false
+    }
+  ],
+  "media": [
+    {
+      "title": "SDSU awarded research grant to help fight poultry virus",
+      "outlet": "SDSU News",
+      "institution": "South Dakota State University",
+      "year": "2025",
+      "focus": "Avian Metapneumovirus (AMPV) genomic surveillance and diagnostic control strategies"
+    },
+    {
+      "title": "USU Bioinformatics Expert Hopes Big Data Lab Will Revolutionize More Fields of Research",
+      "outlet": "USU Today",
+      "institution": "Utah State University",
+      "year": "2022",
+      "focus": "Computational systems biology, machine learning in agricultural genomics, and web server infrastructure"
+    },
+    {
+      "title": "Data Scientists Uncovering Genes that Protect Alfalfa against Salinity Stress",
+      "outlet": "USU Today",
+      "institution": "Utah State University",
+      "year": "2021",
+      "focus": "Transcriptomic profiling, RNA-Seq differential expression, and abiotic stress resistance"
+    }
+  ]
+}

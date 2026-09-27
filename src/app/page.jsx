@@ -3,6 +3,7 @@ import profile from "@/data/profile.json";
 import grants from "@/data/grants.json";
 import articles from "@/data/blog.json";
 import teaching from "@/data/teaching.json";
+import eduAwards from "@/data/education_awards.json";
 
 export default function HomePage() {
   const featuredGrant = grants.find((g) => g.highlight) || grants[0];
@@ -310,7 +311,154 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
+      {/* EDUCATION TIMELINE & AWARDS SECTION */}
+      <section className="space-y-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-sky-100 pb-3 gap-2">
+          <div>
+            <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-800">
+              <span className="w-2.5 h-1 rounded bg-sky-500" />
+              Academic Credentials &bull; Formal Training &amp; Honors
+            </div>
+            <h2 className="text-2xl font-display font-bold text-slate-900 mt-1">
+              Education, Academic Trajectory &amp; Honors
+            </h2>
+          </div>
+          <div className="text-xs font-mono text-slate-500">
+            Utah State University &bull; Punjabi University &bull; Kurukshetra University
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+          {/* Education Timeline (Col 7) */}
+          <div className="lg:col-span-7 card-colorful p-7 md:p-8 space-y-6">
+            <div className="flex items-center justify-between border-b border-sky-100 pb-3">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-sky-600" />
+                <h3 className="font-display font-bold text-slate-900 text-lg">
+                  Education &amp; Academic Timeline
+                </h3>
+              </div>
+              <span className="text-xs font-mono text-slate-400">2005 – 2024</span>
+            </div>
+
+            <div className="relative pl-6 space-y-7 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-sky-200">
+              {eduAwards.education.map((item, idx) => (
+                <div key={idx} className="relative group">
+                  {/* Timeline Node */}
+                  <div className="absolute -left-[27px] top-1.5 w-3.5 h-3.5 rounded-full border-2 border-white bg-sky-600 shadow-sm group-hover:scale-125 transition" />
+
+                  <div className="space-y-1.5">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-sky-100 text-sky-800">
+                        {item.badge}
+                      </span>
+                      <span className="text-xs font-mono text-slate-500 font-medium">
+                        {item.period}
+                      </span>
+                    </div>
+
+                    <h4 className="font-display font-bold text-slate-900 text-base leading-snug">
+                      {item.degree}
+                    </h4>
+
+                    <div className="text-xs font-mono text-sky-800 font-semibold">
+                      {item.institution} &bull; <span className="text-slate-500 font-normal">{item.location}</span>
+                    </div>
+
+                    {item.department && (
+                      <div className="text-xs text-slate-500">
+                        {item.department} &bull; <span className="text-slate-600 font-medium">{item.specialization}</span>
+                      </div>
+                    )}
+
+                    {item.thesis && (
+                      <div className="text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100 mt-2 leading-relaxed">
+                        <span className="font-mono font-bold text-slate-700 text-[11px] block mb-0.5">
+                          {item.degree.includes("Ph.D.") ? "Doctoral Dissertation:" : "Master's Thesis:"}
+                        </span>
+                        <span className="italic font-normal">"{item.thesis}"</span>
+                        {item.advisor && (
+                          <span className="block mt-1 font-mono text-[11px] text-sky-700 font-medium">
+                            Advisor: {item.advisor}
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Awards & Honors + Media Recognition (Col 5) */}
+          <div className="lg:col-span-5 flex flex-col justify-between gap-6">
+            {/* Awards Card */}
+            <div className="card-colorful p-7 space-y-5 bg-gradient-to-br from-white via-amber-50/20 to-sky-50/30 border-2 border-amber-200/80">
+              <div className="flex items-center justify-between border-b border-amber-100 pb-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#ff671f]" />
+                  <h3 className="font-display font-bold text-slate-900 text-lg">
+                    Honors &amp; Awards
+                  </h3>
+                </div>
+                <span className="text-xs font-mono text-amber-800 font-bold bg-amber-100/70 px-2 py-0.5 rounded">
+                  Research Honors
+                </span>
+              </div>
+
+              <div className="space-y-3.5">
+                {eduAwards.awards.map((award, idx) => (
+                  <div
+                    key={idx}
+                    className={`p-3.5 rounded-xl border transition ${
+                      award.highlight
+                        ? "bg-amber-50/50 border-amber-200 shadow-2xs"
+                        : "bg-white border-slate-100"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between text-[11px] font-mono mb-1">
+                      <span className="font-bold text-[#e65100]">{award.level}</span>
+                      <span className="text-slate-400 font-medium">{award.year}</span>
+                    </div>
+                    <h4 className="font-display font-bold text-slate-900 text-sm leading-snug">
+                      {award.title}
+                    </h4>
+                    <p className="text-[11px] text-slate-500 font-mono mt-0.5">
+                      {award.institution}
+                    </p>
+                    <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                      {award.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Media & Press Features */}
+            <div className="card-colorful p-6 space-y-3 bg-gradient-to-br from-white via-sky-50/30 to-blue-50/40">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-cyan-500" />
+                <h4 className="font-display font-bold text-slate-900 text-sm">
+                  Media &amp; Institutional Press
+                </h4>
+              </div>
+              <div className="space-y-2 text-xs">
+                {eduAwards.media.map((m, idx) => (
+                  <div key={idx} className="p-2.5 rounded-lg bg-white border border-sky-100 space-y-0.5">
+                    <div className="flex items-center justify-between text-[11px] font-mono text-sky-700">
+                      <span className="font-bold">{m.outlet} ({m.year})</span>
+                      <span className="text-slate-400">{m.institution}</span>
+                    </div>
+                    <div className="font-medium text-slate-800 text-xs">"{m.title}"</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* BIOINFORMATICS TECHNICAL GUIDES & METHODOLOGICAL INSIGHTS */}
       <section className="space-y-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-sky-100 pb-3 gap-2">
