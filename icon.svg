@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1E3F" />
+      <stop offset="50%" stop-color="#091830" />
+      <stop offset="100%" stop-color="#051020" />
+    </linearGradient>
+    <linearGradient id="dGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284C7" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#38BDF8" stroke-opacity="0.25" stroke-width="4" />
+
+  <!-- Monogram "ND" -->
+  <g filter="url(#glow)">
+    <!-- "N" in Crisp White -->
+    <text x="82" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="228" fill="#FFFFFF" letter-spacing="-6">N</text>
+    <!-- "D" in Vivid Sky Cyan -->
+    <text x="252" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="228" fill="url(#dGrad)" letter-spacing="-6">D</text>
+  </g>
+
+  <!-- Indian Tricolor Accent Base Bar -->
+  <g transform="translate(0, 395)">
+    <!-- Indian Saffron Pill -->
+    <rect x="135" y="0" width="105" height="18" rx="9" fill="#FF671F" />
+    <!-- Center Pure White Dot -->
+    <circle cx="256" cy="9" r="9" fill="#FFFFFF" />
+    <!-- India Green Pill -->
+    <rect x="272" y="0" width="105" height="18" rx="9" fill="#138808" />
+  </g>
+</svg>
