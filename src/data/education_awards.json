@@ -19,20 +19,19 @@
       "badge": "Master's Degree"
     },
     {
+      "degree": "Add-on Certificate Diploma in Bioinformatics",
+      "institution": "University College, Kurukshetra University",
+      "location": "Kurukshetra, India",
+      "period": "2007 – 2008",
+      "badge": "Certificate Diploma"
+    },
+    {
       "degree": "B.Sc. in Biology",
       "institution": "University College, Kurukshetra University",
       "location": "Kurukshetra, India",
       "period": "Jul 2005 – Jun 2008",
       "subjects": "Zoology, Botany, Chemistry",
       "badge": "Bachelor's Degree"
-    },
-    {
-      "degree": "Add-on Certificate Diploma in Bioinformatics",
-      "department": "Department of Bioinformatics",
-      "institution": "Kurukshetra University",
-      "location": "Kurukshetra, India",
-      "period": "2007 – 2008",
-      "badge": "Certificate Diploma"
     }
   ],
   "awards": [
