@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Dr. Naveen Duhan — Computational Biologist & Bioinformatician",
-  description: "Personal academic portfolio of Dr. Naveen Duhan, Ph.D. — Computational Biologist specializing in viral genomics, sequence-based machine learning, host-pathogen interactomics, and scalable bioinformatics software.",
+  description: "Personal academic portfolio of Dr. Naveen Duhan, Ph.D. — Computational Biologist specializing in NGS and multi-omics analysis, AI and machine learning, systems biology, and public web servers and databases.",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },

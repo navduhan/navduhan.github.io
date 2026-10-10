@@ -15,18 +15,17 @@ export default function HomePage() {
         <div className="lg:col-span-8 space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-sky-50 to-cyan-50 border border-sky-200/80 text-sky-800 text-xs font-semibold uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-[#138808]" />
-            Computational Biologist &bull; Genomics &bull; Machine Learning &bull; Systems Biology
+            Computational Biologist &bull; NGS &amp; Multi-Omics &bull; AI &bull; Systems Biology &bull; Web Servers
           </div>
 
           <h1 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-            Predictive genomics of viral emergence &amp; host response using{" "}
-            <span className="hero-gradient-text">machine learning</span> &amp; scalable web systems.
+            Building NGS, <span className="hero-gradient-text">AI</span> and network methods, and the public web servers &amp; databases that make them usable.
           </h1>
 
           <p className="text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
-            I develop computational methods for genomic and transcriptomic analysis, sequence-based machine learning,
-            and molecular interactomes. My work delivers advanced bioinformatics infrastructure, high-throughput surveillance
-            pipelines, and predictive algorithms for emerging viral pathogens and disease outbreaks.
+            I develop pipelines for sequencing and multi-omics analysis, sequence-based machine learning models, and
+            systems-level host-pathogen networks, and release them as web servers and databases. Applications span viral
+            pathogens, crops, livestock, and human disease.
           </p>
 
           {/* Quick Credentials Strip */}
@@ -47,14 +46,14 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono">
             <span className="text-slate-400 font-bold text-[11px] uppercase tracking-wider mr-1">Focus Areas:</span>
             {[
-              "Viral Surveillance",
-              "Deep Learning & AI",
-              "Host-Pathogen Interactomes",
+              "NGS & Transcriptomics",
               "Multi-Omics Integration",
-              "Nextflow DSL2",
-              "Enzyme Classification",
-              "MicroRNA Discovery",
-              "HPC Workflows"
+              "Deep Learning & AI",
+              "Protein Language Models",
+              "Systems Biology",
+              "Host-Pathogen Interactomes",
+              "Web Servers & Databases",
+              "Viral Genomics"
             ].map((tag, i) => (
               <span
                 key={i}
@@ -171,7 +170,7 @@ export default function HomePage() {
               Research Program &bull; Four Scientific Pillars
             </div>
             <h2 className="text-2xl font-display font-bold text-slate-900 mt-1">
-              Host–Pathogen Genomics &amp; Predictive Interactomes
+              From Sequencing Data to Predictive Models &amp; Public Resources
             </h2>
           </div>
           <Link
@@ -189,89 +188,81 @@ export default function HomePage() {
               <span className="px-2.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-mono font-bold">
                 PILLAR 01
               </span>
-              <span className="text-xs font-mono text-slate-400">pySeqRNA &bull; SegVira</span>
+              <span className="text-xs font-mono text-slate-400">pySeqRNA &bull; MetaNextViro &bull; miPyRNA</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Viral Surveillance &amp; Multi-Omics Discovery
+              NGS &amp; Multi-Omics Analytics
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Investigates the relationship between viral genomic variation and host transcriptional responses during infection,
-              reservoir maintenance, and cross-species spillover. Integrates targeted amplicon and metagenomic sequencing with host
-              transcriptomics to resolve low-frequency intra-host single nucleotide variants (iSNVs) and quasispecies diversity.
+              Pipelines that take raw sequencing reads to biological insight: RNA-Seq, small RNA, metagenomics, amplicon sequencing and variant calling. Applied to viral surveillance (iSNVs, quasispecies), crop stress transcriptomics, livestock markers, and integrated multi-omics.
             </p>
             <div className="text-xs font-mono text-sky-700 pt-2 flex flex-wrap gap-2">
-              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Viral Surveillance</span>
-              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Host Multi-Omics</span>
-              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">iSNV Profiling</span>
+              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">RNA-Seq</span>
+              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Metagenomics</span>
+              <span className="bg-sky-50 px-2 py-0.5 rounded border border-sky-100">Variant Calling</span>
             </div>
           </div>
 
-          {/* Pillar 2 */}
+{/* Pillar 2 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-cyan-500">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-800 text-xs font-mono font-bold">
                 PILLAR 02
               </span>
-              <span className="text-xs font-mono text-slate-400">deepNEC 2.0 &bull; deepHPI</span>
+              <span className="text-xs font-mono text-slate-400">deepNEC 2.0 &bull; PRGminer &bull; MINpred</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Machine Learning &amp; Context-Aware AI for Interactions
+              Artificial Intelligence &amp; Machine Learning
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Develops multimodal machine learning architectures and protein language models that combine sequence representations,
-              structural interfaces, and host-receptor orthology. Predicts continuous biophysical binding affinities (ΔΔG) and receptor
-              specificity (including α-2,3 and α-2,6 sialic acids) to prioritize cross-species spillover risk.
+              Alignment-free deep learning and protein language models that infer function, localization and interaction properties directly from sequence: enzymes, resistance genes, transporters, subcellular localization, and binding affinity (ΔΔG), benchmarked with homology-aware splits.
             </p>
             <div className="text-xs font-mono text-teal-700 pt-2 flex flex-wrap gap-2">
+              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Deep Learning</span>
               <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Protein Language Models</span>
-              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Continuous Affinities (ΔΔG)</span>
-              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Spillover Forecasting</span>
+              <span className="bg-teal-50 px-2 py-0.5 rounded border border-teal-100">Genome Annotation</span>
             </div>
           </div>
 
-          {/* Pillar 3 */}
+{/* Pillar 3 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-indigo-500">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-indigo-100 text-indigo-800 text-xs font-mono font-bold">
                 PILLAR 03
               </span>
-              <span className="text-xs font-mono text-slate-400">HuCoPIA &bull; Host Atlases</span>
+              <span className="text-xs font-mono text-slate-400">deepHPI &bull; HuCoPIA &bull; HuPoxNET</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Comparative Systems Biology &amp; Host Immune Networks
+              Systems Biology &amp; Host–Pathogen Networks
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Investigates how sequence-divergent pathogens converge on shared host regulatory networks. Analyzes species-specific
-              host co-factors (such as ANP32A/B) and viral disruption of conserved innate immune signaling pathways (RIG-I, MDA5,
-              interferon cascades) across reservoir species and susceptible hosts.
+              Protein-protein interactomes within and between species, integrated with expression, pathway and regulatory data, to explain susceptibility, virulence and resistance in human, animal and plant systems, including host co-factors and innate immune signaling.
             </p>
             <div className="text-xs font-mono text-indigo-700 pt-2 flex flex-wrap gap-2">
-              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Comparative Interactomics</span>
-              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Host Co-factors</span>
+              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Interactomics</span>
+              <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Network Integration</span>
               <span className="bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Innate Immunity</span>
             </div>
           </div>
 
-          {/* Pillar 4 */}
+{/* Pillar 4 */}
           <div className="card-colorful p-7 space-y-3.5 border-l-4 border-l-[#ff671f]">
             <div className="flex items-center justify-between">
               <span className="px-2.5 py-0.5 rounded bg-orange-100 text-[#e65100] text-xs font-mono font-bold">
                 PILLAR 04
               </span>
-              <span className="text-xs font-mono text-slate-400">Nextflow &bull; 19 Servers</span>
+              <span className="text-xs font-mono text-slate-400">13 Web Resources &bull; 9 Packages</span>
             </div>
             <h3 className="font-display font-bold text-slate-900 text-lg">
-              Reproducible Software Architecture &amp; Public Infrastructure
+              Web Servers, Databases &amp; Reproducible Software
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Translates algorithmic discoveries into production-grade pipelines and publicly accessible web infrastructure.
-              Engineers containerized Nextflow DSL2 workflows (MetaNextViro) for high-performance computing clusters and maintains
-              19 public web servers accessed by over 24,000 researchers across 140 countries.
+              Cost-effective prediction servers, curated databases (microsatellite markers, host-pathogen interactomes, surveillance trackers) and containerized Nextflow DSL2 workflows, used by more than 11,000 researchers worldwide.
             </p>
             <div className="text-xs font-mono text-[#e65100] pt-2 flex flex-wrap gap-2">
-              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">Nextflow DSL2 Workflows</span>
-              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">19 Deployed Web Platforms</span>
-              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">24,000+ Global Users</span>
+              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">13 Web Resources</span>
+              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">Nextflow DSL2</span>
+              <span className="bg-orange-50 px-2 py-0.5 rounded border border-orange-200">11,000+ Users</span>
             </div>
           </div>
         </div>
@@ -285,7 +276,7 @@ export default function HomePage() {
             Research Vision &bull; Methodological Trajectory &bull; Research Leadership
           </div>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-slate-900">
-            From molecular classification to predictive host–pathogen interactomes.
+            From sequence-level classification to predictive interactomes and public resources.
           </h2>
         </div>
 
@@ -317,9 +308,9 @@ export default function HomePage() {
               and co-authored studies on viral genomic diversity.
             </p>
             <div className="border-l-2 border-sky-500 pl-4 py-2 bg-sky-50/70 rounded-r-lg text-slate-800 text-xs md:text-sm font-medium">
-              "My research program develops computational methods to understand how genomic variation and host regulatory
-              networks shape infection outcomes, cross-species spillover, and disease pathogenesis. A central question is how
-              cellular context and molecular networks explain differences in virulence and phenotype that sequence alone cannot predict."
+              "My research program turns sequencing data into predictive biological understanding. A central question is how
+              genomic variation and molecular networks explain phenotypes, from stress tolerance in crops to virulence in
+              pathogens, that sequence alone cannot predict."
             </div>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono font-bold">
               <Link href="/research-grants/" className="text-sky-700 hover:text-sky-900 underline underline-offset-4">

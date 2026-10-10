@@ -38,7 +38,7 @@
     "globalUsers": "11,000+"
   },
   "fiveYearVision": {
-    "title": "Predictive Genomics of Viral Emergence and Host Response",
-    "summary": "Connecting multi-omics discovery with AI-based variant interpretation, structural interactomics, and systems biology to forecast viral emergence and reveal host defense mechanisms across species."
+    "title": "Multi-Omics, AI, and Systems Biology for Predictive Genomics",
+    "summary": "Connecting NGS and multi-omics discovery with AI-based annotation and interaction prediction, systems-level networks, and public web servers and databases for plants, animals, and humans."
   }
 }

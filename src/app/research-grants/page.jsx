@@ -3,72 +3,72 @@ import profile from "@/data/profile.json";
 
 export const metadata = {
   title: "Research & Four Pillars — Dr. Naveen Duhan",
-  description: "Four research pillars in computational biology: genomic surveillance, context-aware AI, comparative systems biology, and reproducible software infrastructure, supported by $2.27M in active research funding.",
+  description: "Four research pillars in computational biology: NGS and multi-omics, AI and machine learning, systems biology, and web servers and databases, supported by $2.27M in active research funding.",
 };
 
 const FOUR_PILLARS = [
   {
     number: "01",
-    title: "Viral Surveillance & Multi-Omics Discovery",
-    tagline: "Tracking viral evolution, quasispecies, and intra-host variation at the animal–human interface",
+    title: "NGS & Multi-Omics Analytics",
+    tagline: "From raw reads to biological insight across viruses, crops, livestock, and human disease",
     accentColor: "border-sky-500",
     badgeBg: "bg-sky-100 text-sky-800",
-    coreTools: ["pySeqRNA", "SegVira", "MetaNextViro"],
+    coreTools: ["pySeqRNA", "MetaNextViro", "miPyRNA", "SNVguru", "PyVirSeq"],
     description:
-      "Modern disease surveillance requires looking beyond consensus sequences to resolve the dynamic intra-host population structures of rapidly emerging pathogens. This pillar investigates the relationship between viral sequence variation and host transcriptional responses during infection and cross-species transmission events.",
+      "Sequencing data is abundant, but turning it into reproducible biological conclusions remains the bottleneck. This pillar develops and applies pipelines for RNA-Seq, small RNA, metagenomic, amplicon, and variant analysis, and integrates these layers into multi-omics views of how genotype shapes phenotype.",
     keyDirections: [
-      "Targeted amplicon sequencing and whole-genome reconstruction of emerging avian influenza (clade 2.3.4.4b H5N1), avian metapneumovirus (AMPV-A and AMPV-B), and porcine reproductive and respiratory syndrome virus (PRRSV-2).",
-      "Rigorous quantification of low-frequency intra-host single nucleotide variants (iSNVs ≥ 5%) and quasispecies diversity to capture adaptation before consensus fixation.",
-      "Pairing high-throughput viral genomics with host RNA-Seq transcriptomics to model viral replication kinetics, local tissue load, and differential cellularity across infection timecourses.",
-      "Deploying open Python and Cython analytical modules for automated variant calling, phylodynamic reconstruction, and diagnostic marker tracking.",
+      "All-in-one transcriptomics workflows (pySeqRNA) that move from reads to annotated, publication-ready tables, including two-phase handling of unique and multi-mapped reads.",
+      "Viral genomics: targeted amplicon and metagenomic sequencing of avian influenza, avian metapneumovirus, and PRRSV, with quantification of low-frequency intra-host variants (iSNVs) and quasispecies diversity.",
+      "Plant and animal genomics: miRNA discovery and classification (miPyRNA), differential expression under drought, salt, heat, and pathogen stress in crops, and microsatellite and variant marker development.",
+      "Integrating host and pathogen transcriptomes with variant, small RNA, and epigenomic data (ChIP-seq, Var-seq, dual RNA-seq) for multi-omics interpretation.",
     ],
   },
   {
     number: "02",
-    title: "Machine Learning & Context-Aware AI for Host–Pathogen Interactions",
-    tagline: "Bridging sequence representations with structural biophysics to forecast spillover potential",
+    title: "Artificial Intelligence & Machine Learning",
+    tagline: "Sequence-based deep learning for annotation, interaction, and risk prediction",
     accentColor: "border-cyan-500",
     badgeBg: "bg-cyan-100 text-cyan-800",
-    coreTools: ["deepNEC 2.0", "deepHPI", "SKEMPI 2.0 / PDBbind"],
+    coreTools: ["deepNEC 2.0", "PRGminer", "MINpred", "RSLpred2", "AtSubP-2.0"],
     description:
-      "Sequence similarity alone often fails to explain why certain viral variants readily cross species barriers while closely related lineages remain restricted. This pillar develops multimodal machine learning architectures that combine sequence embeddings, structural interfaces, and host-receptor orthology to predict continuous interaction properties.",
+      "Most genomes have far more sequence than experimental annotation. This pillar builds alignment-free deep learning and protein language model approaches that infer function, localization, and interaction properties directly from sequence, with benchmarking designed to avoid homology leakage.",
     keyDirections: [
-      "Predicting continuous biophysical binding affinities (ΔΔG and dissociation constants Kd) rather than static binary interaction labels, trained on curated structural interaction datasets.",
-      "Quantitative sequence-to-affinity modeling of viral receptor-binding domains (e.g., influenza hemagglutinin) against α-2,3 and α-2,6 sialic acid glycan linkages from microarray profiles.",
-      "Developing alignment-free protein language model architectures for functional annotation and enzymatic classification, as demonstrated in deepNEC with >95% accuracy.",
-      "Enforcing strict homology-based test partitioning to prevent data leakage and ensure calibrated uncertainty estimation across out-of-distribution viral variants.",
+      "Genome-wide feature annotation: enzyme classification (deepNEC, >95% accuracy), plant disease resistance genes (PRGminer), subcellular localization (AtSubP-2.0, RSLpred2), and mineral transporter prediction (MINpred).",
+      "Protein language models and multimodal architectures that combine sequence embeddings, structural interfaces, and host-receptor orthology.",
+      "Continuous binding affinity (ΔΔG) and receptor-specificity prediction, for example influenza hemagglutinin against α-2,3 and α-2,6 sialic acid linkages, to prioritize cross-species spillover risk.",
+      "Homology-aware train/test partitioning and calibrated uncertainty so that reported performance holds for out-of-distribution sequences.",
     ],
   },
   {
     number: "03",
-    title: "Comparative Systems Biology & Host Immune Networks",
-    tagline: "Mapping host cellular perturbations and innate immune evasion across species",
+    title: "Systems Biology & Host–Pathogen Networks",
+    tagline: "Interactomes, pathways, and regulatory networks across hosts, pathogens, and species",
     accentColor: "border-indigo-500",
     badgeBg: "bg-indigo-100 text-indigo-800",
-    coreTools: ["HuCoPIA", "HuPoxNET", "Host Interactome Atlases"],
+    coreTools: ["deepHPI", "HuCoPIA", "HuPoxNET", "APinet", "GreeningDB"],
     description:
-      "When a pathogen encounters a new host, differences in outcome are governed by how effectively viral proteins disrupt or co-opt the host's intracellular regulatory networks. This pillar uses comparative network biology to discover conserved immune vulnerabilities and explain species-specific virulence differences.",
+      "Disease outcomes arise from interacting molecular networks rather than single genes. This pillar models protein-protein interactions within and between species, and integrates them with expression, pathway, and regulatory data to explain susceptibility, resistance, and virulence.",
     keyDirections: [
-      "Comparative interactome modeling across reservoir species (wild aquatic birds, bats) and novel hosts (mammals, poultry, humans) to identify evolutionary divergence in host co-factors.",
-      "Evaluating how viral polymerase adaptations alter physical interactions with host nuclear replication machinery (such as host ANP32A/B co-factors) across species.",
-      "Analyzing how non-structural viral proteins (such as NS1 and PB1-F2) modulate pattern recognition receptors (RIG-I and MDA5) and dysregulate interferon-stimulated gene (ISG) cascades.",
-      "Prioritizing prospective therapeutic targets by integrating network centrality perturbation with functional viability constraints from high-throughput CRISPR knockout screens.",
+      "Deep learning prediction of host-pathogen protein-protein interactions (deepHPI) and interactome atlases for human-coronavirus, human-monkeypox, citrus-greening, wheat-Karnal bunt, and cereal-pathogen systems.",
+      "Comparative interactomics across reservoir and susceptible species, including host co-factors such as ANP32A/B and innate immune signaling (RIG-I, MDA5, interferon-stimulated genes).",
+      "Network-level integration of transcriptomes, metabolic pathways, and gene regulatory networks to identify hub genes and candidate therapeutic or breeding targets.",
+      "Prioritizing targets by combining network centrality with functional evidence such as CRISPR screens and mutant lines.",
     ],
   },
   {
     number: "04",
-    title: "Reproducible Software Architecture & Public Web Infrastructure",
-    tagline: "Translating algorithmic research into production-grade pipelines and accessible global platforms",
+    title: "Web Servers, Databases & Reproducible Software",
+    tagline: "Making methods and data usable by the wider research community",
     accentColor: "border-[#ff671f]",
     badgeBg: "bg-orange-100 text-[#e65100]",
-    coreTools: ["Nextflow DSL2", "Docker / Singularity", "Software & 13 Web Resources"],
+    coreTools: ["13 Web Resources", "9 Software Packages", "Nextflow DSL2", "Docker / Singularity"],
     description:
-      "Scientific discovery is accelerated when complex computational workflows are accessible, reproducible, and easy to run across heterogeneous computing environments. This pillar focuses on architecting enterprise-grade pipelines and publicly deployed web portals that serve the international research community.",
+      "A method only has impact if others can run it. This pillar delivers cost-effective prediction servers, curated databases, and containerized workflows, and maintains them for the long term. Public resources have been used by more than 11,000 researchers.",
     keyDirections: [
-      "Engineering modular, containerized Nextflow DSL2 pipelines (MetaNextViro) with native support for Slurm HPC clusters, Docker, and Singularity runtime environments.",
-      "Deploying and maintaining interactive public web servers and databases accessed by researchers worldwide (kaabil.net and bioinfo.usu.edu).",
-      "Developing well-documented, open-source Python packages distributed via PyPI, GitHub, and Zenodo with checksum-verified model weights and versioned regression testing.",
-      "Building evidence-linked portals that present raw sequences, variant calls, and machine learning predictions with auditable provenance and confidence intervals.",
+      "Curated databases: legumeSSRdb, citSATdb, ranchSATdb (microsatellite markers), GreeningDB, TritiKBdb, HuCoPIA, HuPoxNET (host-pathogen interactomes), and covidTracker.",
+      "Prediction web servers for deepNEC, deepHPI, PRGminer, MINpred, AtSubP-2.0, and RSLpred2, hosted at kaabil.net and bioinfo.usu.edu.",
+      "Containerized, portable pipelines (Nextflow DSL2, Slurm HPC, Docker, Singularity) such as MetaNextViro.",
+      "Open-source Python packages on PyPI, GitHub, and Zenodo with versioned models, documentation, and regression tests, with results published in venues such as Nucleic Acids Research web server and database issues.",
     ],
   },
 ];
@@ -89,25 +89,24 @@ export default function ResearchGrantsPage() {
           Research Programs &amp; Four Scientific Pillars
         </h1>
         <p className="text-base md:text-lg text-slate-600 max-w-4xl leading-relaxed">
-          My computational biology program investigates how viral genomic variation and host regulatory networks
-          shape infection outcomes, cross-species spillover, and disease severity. By uniting high-throughput diagnostic
-          sequencing with context-aware machine learning and scalable web engineering, our work bridges molecular
-          mechanism with real-time epidemiological impact.
+          My program turns sequencing data into biological understanding. I build NGS and multi-omics pipelines,
+          sequence-based AI models, and systems-level network analyses, and I release them as public web servers and
+          databases. Applications span viral pathogens, crops, livestock, and human disease.
         </p>
 
         {/* Domain Tags Strip */}
         <div className="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono">
           <span className="text-slate-400 font-semibold text-[11px] uppercase tracking-wider mr-1">Scientific Domains:</span>
           {[
-            "Viral Surveillance",
-            "Host-Pathogen Interactomes",
+            "NGS & Transcriptomics",
+            "Multi-Omics Integration",
             "Deep Learning & AI",
             "Protein Language Models",
-            "Nextflow DSL2",
-            "Metagenomics",
-            "Multi-Omics Integration",
-            "Crop Bioinformatics",
-            "Structural Modeling"
+            "Systems Biology",
+            "Host-Pathogen Interactomes",
+            "Web Servers & Databases",
+            "Viral Genomics",
+            "Crop & Livestock Genomics"
           ].map((tag, i) => (
             <span key={i} className="px-2.5 py-1 rounded-md bg-white border border-sky-200 text-sky-800 font-medium shadow-2xs">
               #{tag.replace(/\s+/g, "")}

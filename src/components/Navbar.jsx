@@ -28,10 +28,10 @@ export default function Navbar() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#138808]" />
             </span>
             <span className="font-bold text-slate-800 tracking-tight text-[11px] sm:text-xs">
-              VIRAL SURVEILLANCE &amp; COMPUTATIONAL GENOMICS
+              NGS &bull; AI &bull; SYSTEMS BIOLOGY &bull; WEB SERVERS
             </span>
             <span className="hidden lg:inline text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200 text-[11px]">
-              Nextflow DSL2 &bull; SLURM HPC &bull; Protein LLMs
+              Multi-Omics &bull; Deep Learning &bull; Databases
             </span>
           </div>
           <div className="flex items-center gap-3 text-slate-600 text-[11px] sm:text-xs">
@@ -85,7 +85,7 @@ export default function Navbar() {
           {/* Action Button & Mobile Hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="/Naveen_Duhan_CV.pdf"
+              href="/Naveen_Duhan_CV_Professional.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gradient text-sm py-2 px-4 text-decoration-none"
